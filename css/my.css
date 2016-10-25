@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* 账户设置 start */
+.account-settings{background:#fefefe;margin-bottom:0.4rem;}
+.setting_item{
+		padding:0.25rem;border-bottom: 1px solid #ddd;align-items:center;
+		display:flex;display:-webkit-flex;justify-content:space-between;
+		background:url(../images/my/right_icon.png) center right 0.25rem no-repeat;
+		font-size:0.28rem;background-size:0.2rem 0.35rem;
+	}
+.setting_head_img{
+	width: 1.11rem;height: 1.11rem;border-radius:50%;
+	margin-right:0.5rem;
+}
+.settings_item_num{
+	color:#999;font-size:0.28rem;padding-right: 0.5rem;
+}
+.setting_btn{
+	width: 100%;padding:0.25rem 0;background:#fff;
+	border-top:1px solid #ddd;border-bottom:1px solid #ddd;
+	margin-bottom: 0.4rem;
+}
+
+/* 设置头像 */
+.setHead_mask{
+	position:absolute;top:0;left:0;width:100%;height:100%;
+	background:rgba(0,0,0,.5);z-index:9999999;display:none;
+}
+.setHead_wrap{
+	position:absolute;left:0;bottom:0;width: 100%;
+	transform:translate3d(0,4rem,0);
+	padding:0 0.15rem;transition: .3s ease;
+}
+.setHead_item{
+	width: 100%;padding:0.25rem 0;background:#fff;
+	text-align: center;border-bottom:1px solid #ddd;
+	color:#0078ff;
+}
+.setHead_item:first-child{
+	border-radius:5px 5px 0 0;color:#999;font-size:0.2rem;
+}
+.setHead_item:nth-child(3){
+	border-radius:0 0 5px 5px;border-bottom:none;
+}
+.setHead_item:last-child{
+	margin:0.15rem 0;border-radius:5px;border-bottom:none;
+}
+/* 账户设置 end */
+
+/* 全部关注 and 全部粉丝 start */
+.all-fan-focus{background-color: #fff;}
+.focus-top{margin-top: 0.24rem;}
+.all-fan-focus h2{height: 0.7rem;line-height: 0.7rem;color:#999;margin-left: 0.25rem;font-size: 0.2rem;}
+.all-fan-msg li{background-color: #fff;padding:0.3rem 0.25rem;border-top: 1px solid #ddd;}
+.all-fan-msg li span{width: 0.96rem;height: 0.96rem;border:1px solid #e3e3e3;border-radius: 50%;overflow: hidden;display: inline-block;float: left;}
+.fan-msg{float: left;margin:0 0.2rem;}
+.fan-msg h3{font-size: 0.3rem;color:#333;margin-top: 0.1rem;}
+.fan-msg p{font-size: 0.25rem;color:#999;margin-top: 0.05rem;} 
+.focus-on{position: relative;float: right;text-align: center;margin-top: 0.1rem;}
+.focus-on e{width: 0.44rem;height: 0.44rem;display: inline-block;}
+.focus-on-icon1{background: url(../images/my/focused-icon.png) center center no-repeat;background-size: cover;}
+.focus-on-icon2{background: url(../images/my/with-focus-icon.png) center center no-repeat;background-size: cover;}
+.focus-on b{font-size: 0.2rem;display: block;}
+.focus-on-color1{color:#666;}
+.focus-on-color2{color:#ff9511;}
+/* 全部关注 and 全部粉丝 end */
