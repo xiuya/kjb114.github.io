@@ -7,14 +7,14 @@ kjbWechat/
   |     |-- main.css   共用样式
   |     |-- list.css   列表页样式
   |     |-- details.css  详情页样式
-  |     |--
+  |     |-- my.css	我的账户
   |     |--
   |     |--
   | 	`-- 
   |
   |-- js           存放项目的 js 文件
   |     |
-  |     |-- main.js  特效文件
+  |     |-- main.js  特效脚本
   |     |-- 
   |     `-- 
   |
@@ -58,7 +58,11 @@ kjbWechat/
   |
   |--  my  存放项目我的账户页面
   |     |
-  |     |-- 
+  |     |-- account-settings.html  账户设置
+  |     |-- all-attention.html     全部关注
+  |     |-- all-fen.html           全部粉丝
+  |     |--
+  |     |--
   |     |--
   |     |--
   |
