@@ -1,0 +1,150 @@
+﻿/* 
+	共用样式表
+ */
+@charset "utf-8";
+.container{width: 100%;height: 100%;background:#F5F5F5;}
+/* header start */
+.header{top:0;left:0;width: 100%;height:0.9rem;z-index: 999999;}
+.header .classBtn{width: 0.95rem;height: 100%;font-size:0.17rem;}
+.header .classBtn i{display: block;width: 0.38rem;margin:0 auto;}
+.header .flbtn i{height: 0.32rem;background:url(../images/fl_icon.png)center center;background-size:100% 100%;margin-top:0.17rem;}
+.header .xqbtn i{height: 0.36rem;background:url(../images/fxq_icon.png)center center;background-size:100% 100%;margin-top:0.15rem;}
+.header input{width: 5.6rem;height: 0.58rem;margin-top:0.15rem;padding:0 0.1rem;font-size:0.2rem;background:#fff;}
+
+/*header 修改样式*/
+header.bg-color1{background-color: #00b1e4;}
+header.bg-color1 .back-button{float:left;width: 1.7rem;height: 100%;line-height: 0.9rem;font-size: 0.3rem;font-weight: normal;color: #fff;margin-left: 0.2rem;}
+header.bg-color1 .back-button i{display:inline-block;margin-right:0.1rem;width: 0.28rem;height: 0.4rem;background:url(../images/details/back-arrow.png)center center;background-size:100% 100%;vertical-align: middle;margin-top: -0.04rem;}
+
+header.bg-color2{background:#00171d;}
+/* header end */
+
+/* footer start */
+.footer{bottom:0;left:0;width: 100%;height: 0.98rem;background:#00A2CA;z-index: 999999;}
+.footer ul li{width: 25%;height: 0.98rem;float:left;}
+.footer ul li span{display:block;text-align:center;font-size:0.2rem;}
+.footer ul li i{display:block;width: 0.61rem;height: 0.57rem;margin:0 auto;margin-top:0.06rem;}
+.footer .foot1 i{background:url(../images/home_icon.png);background-size:100% 100%;}
+.footer .foot2 i{background:url(../images/zb_icon.png);background-size:100% 100%;}
+.footer .foot3 i{background:url(../images/xs_icon.png);background-size:100% 100%;}
+.footer .foot4 i{background:url(../images/wd_icon.png);background-size:100% 100%;}
+/* footer end */
+
+/* 首页+成果发布列表页 按钮列表 start */
+.list_box{width: 100%;background:#fff;overflow:hidden;}
+.list_box .swiper-wrapper{}
+.swiper-slide{height: 100%;float:left;}
+.pagination{width: 100%;height: 0.65rem;text-align:center;line-height:0.65rem;}
+.pagination span{display:inline-block;width:0.12rem;height:0.12rem;border-radius:50%;background:#DDDDDD;margin:0 0.05rem;}
+.pagination .swiper-pagination-bullet-active{background:#00B1E4;}
+
+.swiper-slide ol{width: 100%;height: 100%;}
+.swiper-slide ol li{float:left;width:20%;height: 100%;text-align: center;}
+.swiper-slide ol li span{color:#666;font-size:0.22rem;}
+.swiper-slide ol li i{display: block;width: 0.92rem;height: 0.93rem;margin:0 auto;margin-top: 0.28rem;margin-bottom:0.1rem;}
+.swiper-slide ol li:nth-child(1) i{background:url(../images/kjfu_icon.png)center center;background-size:100% 100%;}
+.swiper-slide ol li:nth-child(2) i{background:url(../images/jrzc_icon.png)center center;background-size:100% 100%;}
+.swiper-slide ol li:nth-child(3) i{background:url(../images/zjzk_icon.png)center center;background-size:100% 100%;}
+.swiper-slide ol li:nth-child(4) i{background:url(../images/bkxy_icon.png)center center;background-size:100% 100%;}
+.swiper-slide ol li:nth-child(5) i{background:url(../images/gdlp_icon.png)center center;background-size:100% 100%;}
+/* 首页+成果发布列表页 按钮列表 end */
+
+/*优质项目+金融支持+悬赏详情+成果发布-start*/
+.pages-banner{width: 100%;height: 3.6rem;overflow: hidden;}
+.calendar{margin:0rem 0.25rem;padding-top: 0.28rem;}
+.calendar p{color: #fff;font-size: 0.28rem;display:inline-block;line-height: 0.25rem;}
+.calendar p span{display: inline-block;margin-right: 0.1rem;width: 0.28rem;}
+.calendar .people-number span{height: 0.16rem;line-height: 0.25rem;vertical-align:0.05rem;}
+.calendar .calendar-day span{height: 0.25rem;}
+.header-img{width: 100%;text-align: center;}
+.header-img img{width: 1.1rem;height: 1.1rem;border-radius: 50%;display:inline-block;margin-top: -0.25rem;}
+.people-name{font-size: 0.28rem;color: #fff;margin:0.1rem 0rem 0.15rem;}
+.focus-share{text-align: center;}
+.focus-share button{width: 1.6rem;height: 0.46rem;border: none;border-radius: 3px;background-color: #00b1e4;color:#fff;font-size: 0.28rem;text-align: center;}
+.focus-share button.focus{margin-right: 0.25rem;}
+.details-detial{font-size: 0.28rem;color:#fff;text-indent: 2em;margin-top: 0.35rem;}
+.details-unit{margin-bottom: 0.1rem;padding:0.4rem 0.2rem 0.35rem 0.28rem;}
+.details-unit.details-unit-mb{margin-bottom: 0.6rem;}
+.details-unit p{color: #333;font-size: 0.28rem;margin-top: 0.35rem;}
+.details-unit p span{color:#ff6100;}
+.details-unit.details-p p{color:#666;}
+.details-unit p.details-pft{margin-top: 0;position: relative;z-index: 10;}
+.details-unit h2{color:#00b1e4;font-size: 0.28rem;font-weight: normal;display: inline-block;padding:0px 10px;}
+.details-unit .l-border{border-left: 0.07rem solid #00b1e4;}
+.details-title{height: 0.8rem;background-color: #00b1e4;color: #fff;font-size: 0.28rem;line-height: 0.8rem;text-align: center;margin-bottom: 0.1rem;}
+.details-unit p.details-introduce{text-indent: 2em;line-height: 0.5rem;}
+.details-unit form{width: 6.9rem;height: 2.8rem;}
+.details-unit textarea{display: block;border:1px solid #ddd;width: 6.9rem;height: 2.8rem;resize: none;font-size: 0.25rem;margin: 0.4rem 0 0.2rem;}
+/*优质项目+金融支持+悬赏详情+成果发布-end*/
+
+/*悬赏详情+成果发布-start*/
+.title_name{height: 0.85rem;line-height: 0.85rem;font-size:0.3rem;font-weight:400;text-indent:0.25rem;}
+.reward-banner{background: url(../images/details/reward-banner.jpg) center center no-repeat;background-size: 100% 100%;}
+.calendar.reward-release-calendar{margin:0 0 0 0.25rem;}
+.calendar p.people-number{font-size: 0.3rem;}
+.calendar p span.adimg{height: 0.34rem;vertical-align: -0.07rem;}
+.calendar button{width: 1.5rem;height: 0.6rem;background-color: #00b1e4;background:rgba(0,177,228,0.5);border: none;color: #fff;font-size: 0.28rem;border-radius: 3px;line-height: 0.6rem;margin-right: -0.1rem;}
+.focus-share p{background-color:#00b1e4;font-size: 0.2rem;color: #fff;padding:0.1rem 0.2rem;display: inline-block; }
+.pages-banner div.reward-release-detial{margin-top: 0.25rem;}
+.arrowbr{text-align: right;margin:0 0.2rem 0 0.28rem;position: relative;}
+.arrowbr span{width: 0.2rem;height: 0.2rem;display:inline-block;position: relative;}
+.details-ul li{float: left;width:30%;margin:0 0.025%;text-align: center;}
+.details-ul li span{font-size: 0.34rem;color: #ff6100;display: inline-block;}
+.details-ul li b{color:#999;font-size: 0.24rem;display: block;margin-top: 0.25rem;display: block;}
+/*评分星级*/
+.score-ol li{float: left;line-height: 0.28rem;height: 0.28rem;border: none;margin:0.03rem;padding:0;font-size: 0.28rem;}
+.score-ol li e{display: inline-block;width: 0.22rem;height: 0.2rem;}
+.score-ol li e img{width: 100%;height: 100%;}
+.score-ol li.reward-score{color:#ff6100;}
+/*悬赏详情+成果发布-end*/
+
+/* 悬赏大厅and科技服务 start */
+.screen_box{height: 0.86rem;border-bottom:1px solid #ddd;line-height:0.86rem;}
+.screen_box span{width: 33.3%;text-align:center;font-size:0.28rem;position:relative;}
+.screen_box span i{display:inline-block;width: 0;height: 0;border-left:0.1rem solid transparent;border-right:0.1rem solid transparent;border-top:0.15rem solid #333;margin-left:0.1rem;}
+.screen_box .screen_active{color:#00b1e4;}
+.screen_box .screen_active i{border-top:0.15rem solid #00b1e4;}
+
+.reward_hall ul li{border-bottom:1px solid #ddd;padding:0.3rem 0.2rem;}
+.reward_hall ul li:last-child{border:none;}
+.reward_hall ul li h4{font-size:0.26rem;margin-bottom:0.25rem;line-height: 0.5rem;}
+.reward_hall ul li h4 span{padding:2px 5px;background:#7bc6ff;color:#fff;margin-right:0.1rem;}
+.reward_hall ul li h4 span.jinj{background:#00b1e4;}
+.reward_hall ul li h4 b{padding-left: 0.3rem;color:#999;}
+.reward_hall ul li h4 b i{display:inline-block;width: 0.25rem;height: 0.3rem;vertical-align:middle;margin-right:0.05rem;background:url(../images/lists/position_icon.png)center center;background-size:cover;margin-top:-0.05rem;}
+.class_time{font-size:0.2rem;margin-bottom:0.25rem;}
+.class_time span{width: 33.3%;text-align:center;color:#666;}
+.class_time span strong{font-weight:400;}
+.class_time span font{display:inline-block;font-size:0.28rem;color:#00b1e4;vertical-align:middle;margin-top:-0.03rem;}
+.class_time span:first-child{text-align:left;}
+.class_time span:last-child{text-align:right;}
+.reward_hall ul li p{font-size:0.2rem;color:#999;line-height:0.4rem;}
+/* 悬赏大厅and科技服务 end */
+
+/* 登录 start */
+.sign_box .sign_logo{width: 2.98rem;height: 1.05rem;background:url(../images/kjb_logo.png) center center;background-size:cover;margin:0 auto;margin-top:1.47rem;margin-bottom:1.1rem;}
+.login{margin:0 0.3rem;padding:0.25rem 0;}
+.input_box{padding:0 0.2rem;position:relative;color:#b5b5b5;box-shadow:0px 1px 1px #CACACA;} 
+.login input{padding:0.34rem 0.4rem;width: 100%;font-size:0.2rem;}
+.user{background:url(../images/user_icon.png) left 0.3rem no-repeat;background-size:0.32rem 0.33rem;padding-left:0.52rem;border-bottom:1px solid #CACACA;}
+.psw{background:url(../images/pass_icon.png) left 0.29rem no-repeat;background-size:0.26rem 0.34rem;padding-left:0.52rem;}
+.input_box a{position:absolute;height: 0.8rem;line-height:0.8rem;font-size:0.2rem;color:#b5b5b5;right:0.2rem;bottom:0.05rem;}
+.login .sign_btn{width: 6.88rem;display:block;margin:0.42rem auto;color:#fff;font-size:0.28rem;background:#0099ff;box-shadow:0px 1px 1px #CACACA;}
+.reg_btn a{display:block;width: 2.8rem;height: 0.8rem;margin:0 auto;text-align:center;}
+.reg_btn .reg{background:#7ac7fa;color:#fff;margin-top:0.65rem;line-height:0.8rem;box-shadow:0px 1px 1px #CACACA;}
+.reg_btn .qt_login{line-height:1.1rem;font-size:0.28rem;color:#9f9f9f;}
+/* 登录 end */
+
+/* 注册 start */
+.reg_box{padding:0 0.3rem;width: 100%;}
+.reg_box label{display:block;height: 1rem;line-height:1rem;border-bottom:1px solid #EDEDED;padding:0 0.25rem;}
+.reg_box label:first-child{background:url(../images/reg_se.png) right center no-repeat;background-size:0.2rem 0.4rem;background-position:right 0.25rem center;}
+.reg_box label span,.reg_box label em i{color:#989898;}
+.reg_box label em b{color:#333;padding-right:0.6rem;}
+.phone_num strong{width: 1.3rem;height: 0.6rem;margin-top:0.2rem;line-height:0.6rem;border-right:1px solid #EAEAEB;color:#595959;font-weight:400;font-size:0.35rem;}
+.phone_num input{height: 1rem;width: 5rem;padding:0 0.25rem;background:transparent;}
+.get_yzm .yzm{width: 4.4rem;height: 1rem;background:transparent;}
+.get_yzm .get_num{width: 1.9rem;height:1rem;}
+.get_yzm .get_num b{display:block;height: 0.6rem;margin-top:0.2rem;line-height:0.6rem;text-align:center;color:#333333;border-left:1px solid #EAEAEB;}
+.reg_submit{width: 6.9rem;height: 0.85rem;background:#d2d2d2;color:#fff;margin-top:0.25rem;}
+/* 注册 end */

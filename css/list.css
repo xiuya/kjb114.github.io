@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* 成果发布列表 start */
+.container .list_box .swiper-slide ol{height:auto;width: auto;}
+.container .list_box .swiper-slide ol li{height: 1.6rem;width:25%;}
+.container .list_box .swiper-slide ol li i{width: 0.91rem;height: 0.91rem;}
+.container .list_box .swiper-slide ol li:nth-child(1) i{background:url(../images/lists/list_btn1.png)center center;background-size:100% 100%;}
+.container .list_box .swiper-slide ol li:nth-child(2) i{background:url(../images/lists/list_btn2.png)center center;background-size:100% 100%;}
+.container .list_box .swiper-slide ol li:nth-child(3) i{background:url(../images/lists/list_btn3.png)center center;background-size:100% 100%;}
+.container .list_box .swiper-slide ol li:nth-child(4) i{background:url(../images/lists/list_btn4.png)center center;background-size:100% 100%;}
+.container .list_box .swiper-slide ol:last-child li:nth-child(1) i{background:url(../images/lists/list_btn5.png)center center;background-size:100% 100%;}
+.container .list_box .swiper-slide ol:last-child li:nth-child(2) i{background:url(../images/lists/list_btn6.png)center center;background-size:100% 100%;}
+.container .list_box .swiper-slide ol:last-child li:nth-child(3) i{background:url(../images/lists/list_btn7.png)center center;background-size:100% 100%;}
+.container .list_box .swiper-slide ol:last-child li:nth-child(4) i{background:url(../images/lists/list_btn8.png)center center;background-size:100% 100%;}
+.container .list_box .pagination .swiper-pagination-bullet-active{background:#FF6000;}
+
+.list_screen,.list_screen_term,.result_list{width: 100%;}
+.list_screen_btn{height: 0.9rem;border-bottom:1px solid #ddd;line-height:0.9rem;}
+.list_screen_btn span{float:left;width: 33.3%;height: 100%;font-size:0.28rem;text-align:center;}
+.list_screen_on{color:#00B1E4;border-bottom:0.05rem solid #00B1E4;box-sizing:border-box;}
+.list_screen_term ul{padding:0.2rem 0.28rem;display:none;}
+.list_screen_term ul.terms_show{display:block;}
+.list_screen_term ul li{float:left;width:25%;text-align:center;height: 0.6rem;line-height:0.6rem;}
+.list_screen_term ul li a{display: block;font-size:0.25rem;color:#333;}
+.list_screen_term ul .terms_on a{color:#00B1E4;}
+
+.result_list ul li{padding:0.3rem 0.2rem;border-bottom:1px solid #ddd;}
+.result_list ul li:last-child{border:none;}
+.result_list_img{width: 1.6rem;height: 1.6rem;}
+.result_list_term{width: 5.4rem;}
+
+.result_list_term h4{font-weight:400;font-size:0.28rem;}
+.result_list_time{display:block;font-size:0.2rem;color:#999;}
+.result_list_time b{font-size:0.28rem;color:#FF6000;}
+
+.result_list_details{font-size:0.2rem;margin:0.22rem 0;}
+.result_list_label span{height: 0.4rem;line-height:0.4rem;padding:0 0.05rem;font-size:0.2rem;margin-right:0.1rem;border:1px solid #00B1E4;color:#00B1E4;}
+.result_list_region{color:#999;margin-top:0.01rem;}
+
+.result_list_label span:last-child{border:none;color:#3CA51E;}
+.result_list_label span:last-child i{height: 0.4rem;margin-right:0.1rem;border:1px solid #3CA51E;padding-right:0.05rem;}
+.result_list_label span:last-child i em{width: 0.3rem;margin-right:0.05rem;background:#3CA51E;height:100%;text-align:center;}
+.result_list_label span:last-child i em b{display:inline-block;width: 0.2rem;height:0.24rem;vertical-align:middle;margin-top:-0.06rem;background:url(../images/lists/hrd_icon.png)center center;background-size:100% 100%;}
+
+.result_list_label span.result_list_hot{color:#FF6000;}
+.result_list_label span.result_list_hot  i em{background:#FF6000;}
+.result_list_label span.result_list_hot  i{border:1px solid #FF6000;}
+/* 成果发布列表 end */
+
+/* 招标大厅列表 start */
+.bidding_list ul li h4{height: 0.45rem;overflow:hidden;font-size:0.28rem;margin-bottom:0.25rem;}
+.bidding_list ul li h4 span{padding:0rem 0.1rem;border:1px solid #409DFA;color:#409DFA;font-size:0.2rem;margin-right:0.1rem;vertical-align:middle;margin-top:-0.05rem;display:inline-block;}
+
+.participate{margin-bottom:0.4rem;}
+.participate .participate_monly{font-size:0.2rem;width: 5rem;padding-top:0.06rem;}
+.participate .participate_monly span{color:#999;}
+.participate .participate_monly b{color:#FF6D16;font-size:0.35rem;}
+.participate .participate_monly b font{font-size:0.2rem;}
+.participate .participate_monly span:last-child{margin-left:0.3rem;}
+.participate .participate_monly span i{display:inline-block;margin-right:0.1rem;width: 0.25rem;height: 0.3rem;vertical-align:middle;margin-top:-0.06rem;background:url(../images/lists/position_icon.png)center center;background-size:100% 100%;}
+.participate input{width: 1.75rem;height: 0.45rem;background:#00B1E4;font-size:0.25rem;}
+
+.tender_time{height: 0.4rem;line-height:0.4rem;}
+.tender_time span{width: 38%;text-align:center;font-size:0.2rem;color:#999;}
+.tender_time span:first-child{width: 22%;text-align:left;}
+.tender_time span b{font-size:0.3rem;color:#333;}
+.tender_time span:last-child{width: 40%;text-align:right;}
+/* 招标大厅列表 end */
+
+/* 科技服务 start */
+.service_list .list_screen_btn span{width: 50%;}
+.technology_service ul li h4{margin-bottom:0;}
+.technology_service ul li h4 span{border-radius:0;}
+.technology_service ul li p{margin:0.15rem 0;}
+
+.see_details{margin:0;height: 0.5rem;line-height:0.5rem;}
+.see_details span{color:#999;}
+.see_details .server_monly{width:25%;font-size:0.2rem;}
+.see_details .server_monly strong,.see_details strong span{color:#ff6000;}
+.see_details .server_monly strong font{font-size:0.35rem;color:#ff6000;}
+.see_details .score{width: 50%;text-align:left;}
+.see_details .score i{display:inline-block;width: 0.25rem;height: 0.22rem;background:url(../images/lists/score_icon.png)center center;background-size:100% 100%;vertical-align:middle;}
+.see_details button{width: 1.75rem;height: 0.5rem;background:#00b1e4;border:none;color:#fff;font-size:0.2rem;}
+/* 科技服务 end */
+
+/* 文章板块 start */
+.article_plate .list_screen_btn span{width: 25%;}
+.article_list ul{display:none;}
+.article_list ul li{padding:0.2rem;border-bottom:1px solid #ddd;}
+.article_list ul li a{display:block;height: 100%;}
+.article_img{width:1.4rem;}
+.article_content{width: 5.5rem;font-size:0.2rem;}
+.article_content h4{font-size:0.29rem;overflow:hidden;height: 0.42rem;}
+.article_content h4 span{display:inline-block;font-size:0.2rem;padding:0 0.1rem;border:1px solid #3D9CFA;color:#3D9CFA;}
+.article_content p{margin:0.12rem 0;color:#FF6501;height: 0.34rem;overflow:hidden;}
+.article_content .step{color:#666;margin-bottom:0.1rem;display:block;height: 0.34rem;overflow:hidden;}
+.state span{width: 30%;color:#999;height:0.37rem;overflow:hidden;}
+.state span i{display:inline-block;margin-right:0.05rem;vertical-align:middle;margin-top:-0.03rem;}
+.state span:first-child i{width: 0.33rem;height: 0.22rem;background:url(../images/lists/browse_icon.jpg)center center;background-size:cover;}
+.state span:nth-child(2) i{width: 0.25rem;height:0.22rem;background:url(../images/lists/answer_icon.jpg)center center;background-size:cover;}
+.state span:last-child{width: 40%;}
+.state span b{color:#00B1E4;}
+
+.article_list ul .no_map .article_content{width: 100%;}
+.article_list ul .no_map .article_content p{height:auto;color:#666666;font-size:0.2rem;}
+.article_list ul .no_map .article_content .state span{width: 25%;}
+.article_list ul .no_map .article_content .state span:last-child{text-align:center;}
+.article_list ul .no_map .article_content .state span strong{padding:0 0.1rem;font-weight:400;width:auto;border:1px solid #3D9CFA;color:#3D9CFA;display:inline-block;}
+/* 文章板块 end */
+
+/* 邦客学院 start */
+.search_box{padding:0.1rem 0.25rem;height: 0.8rem;}
+.search_box input{width: 100%;height: 100%;font-size:0.2rem;padding:0 0.7rem;background:#f5f5f5 url(../images/lists/search_btn.png)0.2rem center no-repeat;background-size:0.38rem 0.34rem;}
+.set_title_neme a{color:#999;font-size:0.28rem;}
+.set_title_neme i{margin-left:0.1rem;}
+
+.bk_college h3{padding:0 0.25rem;text-indent:0;border-bottom:1px solid #ddd;	}
+.bk_college_tab{padding:0.3rem 0.25rem;}
+.bk_college_tab ul{display:flex;display:-webkit-flex;flex-flow:row wrap;}
+.bk_college_tab ul li{width:1.65rem;font-size:0.22rem;margin-right:0.111rem;}
+.bk_college_tab ul li:nth-child(4n){margin:0;}
+.figure_head{height: 1.68rem;}
+.bk_college_tab ul li h4{color:#333;margin-top:0.2rem;}
+.bk_college_tab ul li span{display:block;color:#999899;padding:0.16rem 0;}
+
+.article_banner .swiper-slide,.wz_list li{padding:0.15rem 0.25rem;display:flex;display:-webkit-flex;flex-flow:row nowrap;}
+.article_banner a,.wz_list a{display:block;display:flex;display:-webkit-flex;flex-flow:row nowrap;}
+.left_img,.information_img{margin-right:0.25rem;width: 1.4rem;height: 1.4rem;}
+.right_content{flex:7.8;}
+.right_content h4{color:#542B8C;font-size:0.29rem;text-overflow:ellipsis;white-space:nowrap;overflow：hidden;}
+.right_content p{font-size:0.22rem;color:#666;margin-top:0.3rem;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.article_banner .pagination{height:auto;}
+.topic_btn{height: 0.8rem;width: 100%;}
+
+.wz_list{display:flex;display:-webkit-flex;flex-direction:column;}
+.wz_list li{border-bottom:1px solid #ddd;}
+.wz_list li:last-child{border:none;}
+.wz_list h4{font-size:0.27rem;color:text-overflow:ellipsis;white-space:nowrap;overflow：hidden;}
+.wz_list p{color:#666;font-size:0.22rem;margin-top:0.4rem;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+
+.activity{height:4.15rem;display:block;}
+.activity_img{width: 100%;height: 2.8rem;}
+.activity .swiper-slide{display:flex;display:-webkit-flex;flex-flow:row wrap;padding:0.25rem 0.3rem 0rem 0.3rem;}
+.activity .swiper-slide a{display:flex;display:-webkit-flex;flex-flow:row wrap;}
+.activity .activity_name{font-size:0.25rem;width: 100%;text-align:center;margin-top:0.2rem;text-overflow:ellipsis;white-space:nowrap;overflow：hidden;}
+
+/* 邦客学院 end */
+
+

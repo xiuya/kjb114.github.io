@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/*优质项目-start*/
+.project-banner{background: url(../images/details/project-banner.jpg) center center no-repeat;background-size: 100% 100%;}
+.details-unit .project-button{border: none;color:#fff;font-size: 0.22rem;text-align: center;background-color: #ff6100;padding:0.1rem 0.15rem;}
+/*优质项目-end*/
+
+/*金融支持-start*/
+.finace-banner{background: url(../images/details/finace-banner.jpg) center center no-repeat;background-size: 100% 100%;}
+.details-unit .leve-message{color: #666;}
+.details-unit .leve-message span{color:#00b1e4;}
+.details-evaluate{line-height: 0.4rem;}
+.details-evaluate b{width: 0.4rem;height: 0.4rem;display: inline-block;vertical-align:-0.1rem;margin-right: 0.2rem;}
+.details-unit p.details-evaluate{color:#333;}
+/*金融支持-end*/
+
+/*悬赏详情-start*/
+.download-file{width: 3.5rem;height: 0.4rem;position: relative;z-index: 50;top:0;opacity: 0;filter: alpha(opacity=0);}
+.download-file-text{position: relative;z-index: 30;margin-left: -3.5rem;top:0;background-color: transparent;font-size: 0.28rem;}
+.download-img{width: 0.3rem;height: 0.3rem;display: inline-block;vertical-align: -0.04rem;}
+.download-file-text::-webkit-input-placeholder{color:#ff6100;}
+.download-file-text::-moz-placeholder{color:#ff6100;} /* Mozilla Firefox 19+ */
+.download-file-text:-moz-placeholder{color:#ff6100;}/* Mozilla Firefox 4 to 18 */
+.details-unit.reward-unit{padding-left: 0;padding-right: 0;}
+.reward-unit h2.l-border{margin-left: 0.25rem;}
+.join-ul li img{width: 100%;height: 100%;}
+.join-ul>li{border-bottom: 1px solid #ddd;padding:0.25rem;}
+.join-ul li .join-l{float: left;margin-right: 0.25rem;position: relative;width: 1.65rem;height: 1.65rem;border: 1px solid #ddd;}
+.join-ul li .join-l span{display: inline-block;width: 100%;height: 100%;}
+.join-ul li .join-l b{display: inline-block;width: 0.9rem;height: 0.46rem;transform: rotate(30deg);position: absolute;top:0.2rem;right: 0.1rem;-moz-transform: rotate(30deg);-ms-transform: rotate(30deg);-webkit-transform: rotate(30deg);-o-transform: rotate(30deg);}
+.join-ul .join-r h3{font-weight: normal;font-size: 0.28rem;}
+.join-ul .join-r{float: left;width: 5.1rem;position: relative;}
+.join-ul .join-r p{color:#666;font-size: 0.28rem;margin: 0.2rem 0;}
+.join-ul .join-r button{padding:0.1rem 0.2rem;font-size: 0.28rem;color:#fff;background-color: #00b1e4;border: none;position: absolute;right: 0;bottom: 0rem;}
+/*悬赏详情-end*/
+
+/*成果发布-start*/
+.order-consult {text-align: center;margin-bottom: 0.1rem;}
+.order-consult button{width: 3.25rem;height: 0.8rem;background-color: #fff;border:2px solid #00b1e3;text-align: center;color: #00b1e3;font-size: 0.3rem;margin:0 0.2rem;}
+.order-consult button.order-consult-selected{background-color: #00b1e3;color: #fff;}
+.tech-into{margin-top: 0.3rem;}
+.details-unit .tech-into p{margin-top: 0px;line-height: 0.5rem;text-indent: 2em;}
+.details-unit .tech-into .tech-p1{text-indent: 0;}
+/*星级*/
+.details-ul .score-ol li,.details-ul .score-ol li e{width: 0.36rem;height: 0.35rem;}
+/*成果发布-end*/

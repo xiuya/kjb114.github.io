@@ -1,0 +1,68 @@
+﻿/* 
+	首页与列表页样式表
+ */
+@charset "utf-8";
+/* 首页 start */
+.banner{width: 100%;height: 2.54rem;}
+.main{max-width: 750px;margin:0 auto;position:relative;}
+
+/* 成果发布 start */
+.Results_release{width: 100%;padding-bottom: 0.3rem;}
+
+.Results_release ul{padding:0 0.05rem;transition:all .1s;}
+.Results_release ul li{width: 32%;margin-right:0.14rem;float:left;border:1px solid #ddd;}
+.Results_release ul li:last-child{margin:0;}
+.Results_release ul li .Results_img{position:relative;width: 100%;height: 1.8rem;}
+.Results_monly{position:absolute;right:0;bottom:0.1rem;font-size:0.12rem;height:0.45rem;padding:0 0.12rem;line-height:0.45rem;background:#00B7E4;border-radius:0.35rem 0 0 0.35rem;}
+.Results_monly span{font-size:0.3rem;}
+.Results_name{font-size:0.2rem;display:block;padding:0.1rem 0.06rem;text-align:center;}
+/* 成果发布 end */
+
+/* 招标大厅+悬赏大厅 start */
+.Bidding_Hall,.Service_provider{padding:0 0.25rem;}
+.Bidding_Hall .title_name,.Service_provider .title_name{text-indent:0;}
+.Bidding_Hall ol{border-top:1px solid #ddd;}
+.Bidding_Hall ol li{padding:0.28rem 0;border-bottom: 1px solid #ddd;}
+.Bidding_Hall ol li a{display:block;}
+.Bidding_Hall ol li:last-child{border:none;}
+.Bidding_Hall ol li .Bidding_img{width: 1.6rem;height: 1.6rem;position:relative;}
+.Bidding_Hall ol li .Bidding_img span{position:absolute;left:0;top:0;padding:0.1rem;background:rgba(6,6,6,.5);font-size:0.18rem;}
+.Bidding_content{width: 5.3rem;}
+.Bidding_content h4{font-weight:400;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.Bidding_content .Bidding_monly{font-size:0.18rem;margin:0.28rem 0;}
+.Bidding_content .Bidding_monly span{color:#FF6E26;}
+.Bidding_content .Bidding_monly span b{font-size:0.28rem;}
+.Bidding_content h4 a{font-size:0.28rem;color:#555555;}
+.Bidding_content .Bidding_time{font-size:0.2rem;}
+.Bidding_content .Bidding_time span:first-child{padding-right:0.3rem;}
+/* 招标大厅+悬赏大厅 end */
+
+/* 推荐服务商 start*/
+.Service_provider{overflow:hidden;padding-bottom:0.28rem;}
+.Service_provider ul li{width: 2.8rem;border:1px solid #ddd;float:left;margin-right:0.08rem;}
+.Service_provider ul li a{display:block;width: 100%;height: 100%;}
+.Service_provider ul li .Service_img{width: 2.76rem;height: 1.4rem;}
+.Service_provider ul li p{width: 2rem;height: 0.8rem;overflow:hidden;margin:0 auto;margin-bottom:0.05rem;font-size:0.2rem;text-align:center;}
+.Service_provider ul li:last-child{margin-right:0;}
+/* 推荐服务商 end */
+
+/* 技术服务 start */
+.technical_service ul{width: 11.64rem;}
+.technical_service ul li{width: 3.8rem;}
+.technical_service ul li .Service_img{height: 1.35rem;width: 3.76rem;}
+.technical_service ul li p{font-size:0.24rem;color:#666;}
+.technical_service ul li .ts_description{width:3.2rem;height: 1rem;margin-bottom:0.2rem;overflow:hidden;font-size:0.12rem;padding:0.28rem 0;padding-top:0.18rem;}
+/* 技术服务 end */
+
+/* 优质项目 start */
+.title_name a{font-size:0.2rem;color:#999;margin-right:0.2rem;}
+.Quality_project ul li{width:2.47rem;float:left;padding-left:0.35rem;padding-right:0.35rem;padding-top:0.15rem;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+.Quality_project ul li .Quality_project_img{display:block;height: 1.17rem;}
+.Quality_project ul li h4{width: 100%;height: 0.35rem;overflow:hidden;font-size:0.2rem;margin:0.2rem 0;color:#333;}
+.Quality_project ul li .Quality_content{font-size:0.2rem;color:#999;margin-bottom:0.1rem;}
+.Quality_project ul li:nth-child(-n+3){padding-top:0;}
+.Quality_project ul li:nth-child(3n+0){border-right:none;}
+.Quality_content span b{color:#FF7800;}
+.Quality_content span:last-child{color:#333;}
+/* 优质项目 end */
+/* 首页 end */
