@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="format-detection" content="telephone=no">
+	<title>账户设置</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/my.css"/>
+	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../js/rem.js"></script>
+	<script type="text/javascript" src="../js/swiper-3.3.1.jquery.min.js"></script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+</head>
+<body>
+	<!-- head start -->
+	<header class="header psa clear bg-color1 bg-color3">
+		<span class="back-button" onclick="history.go(-1)">
+			<i></i>
+			账户设置
+		</span>
+	</header>
+	<!-- head end -->
+
+	<!-- content start -->
+	<section class="mt9">
+		<ul class="account-settings">
+			<li class="setting_item">
+				头像
+				<div class="setting_head_img">
+					<img src="../images/my/user_headImg.png" width="100%" height="100%" alt="">
+				</div>
+			</li>
+			<li class="setting_item">
+				资料完善
+			</li>
+			<li class="setting_item">
+				密码设置
+			</li>
+			<li class="setting_item">
+				手机号
+				<span class="settings_item_num">
+					186****6028
+				</span>
+			</li>
+			<li class="setting_item">
+				安全中心
+			</li>
+		</ul>
+
+		<ul class="account-settings brt">
+			<li class="setting_item">
+				收支明细
+			</li>
+			<li class="setting_item">
+				账户余额
+			</li>
+			<li class="setting_item">
+				余额提现
+			</li>
+		</ul>
+
+		<ul class="account-settings brt">
+			<li class="setting_item">
+				全部关注
+			</li>
+			<li class="setting_item">
+				我的粉丝
+			</li>
+		</ul>
+
+		
+		<input class="setting_btn" type="button" name="" value="退出登录" />
+			
+	</section>
+	<!-- content end -->
+
+	<!-- setHead start -->
+	<div class="setHead_mask">
+		<ul class="setHead_wrap">
+			<li class="setHead_item">选择头像</li>
+			<li class="setHead_item">拍照</li>
+			<li class="setHead_item">从相册选取</li>
+			<li class="setHead_item cancel_setHead">取消</li>
+		</ul>
+	</div>
+	<!-- setHead end -->
+
+	<script type="text/javascript" src="../js/mian.js"></script>
+	<script type="text/javascript">
+		jumpPage($(".account-settings").eq(2).find("li").eq(0),"all-attention.html");
+		jumpPage($(".account-settings").eq(2).find("li").eq(1),"all-fan.html");
+	</script>
+</body>
+</html>
