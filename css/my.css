@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* 账户设置 start */
 .account-settings{background:#fefefe;margin-bottom:0.4rem;}
 .setting_item{
@@ -54,7 +54,7 @@
 .all-fan-msg li span{width: 0.96rem;height: 0.96rem;border:1px solid #e3e3e3;border-radius: 50%;overflow: hidden;display: inline-block;float: left;}
 .fan-msg{float: left;margin:0 0.2rem;}
 .fan-msg h3{font-size: 0.3rem;color:#333;margin-top: 0.1rem;}
-.fan-msg p{font-size: 0.25rem;color:#999;margin-top: 0.05rem;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;width:5rem;} 
+.fan-msg p{font-size: 0.25rem;color:#999;margin-top: 0.05rem;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;width:4.5rem;} 
 .focus-on{position: relative;float: right;text-align: center;margin-top: 0.1rem;}
 .focus-on e{width: 0.44rem;height: 0.44rem;display: inline-block;}
 .focus-on-icon1{background: url(../images/my/focused-icon.png) center center no-repeat;background-size: cover;}
