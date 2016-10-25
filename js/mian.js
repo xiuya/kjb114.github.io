@@ -41,6 +41,33 @@ if(isEv){
 	    paginationClickable:true
 	});
 	
+	
+	//账户设置（头像设置）
+	$(".setting_head_img").on(touchstart,function(){
+		setHead_show();
+	});
+	$(".cancel_setHead").on(touchstart,function(){
+		setHead_hide();
+	});
+
+	//设置头像弹出窗显示
+	function setHead_show(){
+		$(".setHead_mask").fadeIn(300,function(){
+			$(this).find(".setHead_wrap").css({
+				"transform":"translate3d(0,0,0)"
+			});
+		});
+	};
+
+	//设置头像弹出窗隐藏
+	function setHead_hide(){
+		$(".setHead_wrap").css({
+			"transform":"translate3d(0,4rem,0)"
+		});
+		setTimeout(function(){
+			$(".setHead_mask").fadeOut(300);
+		},300);
+	};
 })(jQuery);
 
 //左右滑动列表封装函数
