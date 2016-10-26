@@ -68,6 +68,37 @@ if(isEv){
 			$(".setHead_mask").fadeOut(300);
 		},300);
 	};
+
+	//选择银行卡
+	$(".bank_card_box").find("li").on(touchstart,function(){
+		var index = $(this).index();
+		$(this).addClass('select_active').siblings('li').removeClass('select_active');
+		load("balance_withdrawal.html",$(this).find("img").attr("src"),$(this).find("p").text(),$(this).find("span").text(),index);
+	});
+
+	//记录选择银行卡信息
+	function load(href,src,bankname,banknum,index){
+		window.location.href = href+"?src="+src+"&bankname="+bankname+"&banknum="+banknum+"&index="+index;
+	};
+
+	try{var url = window.location.href.split("?")[1].split("&");
+		//每次选择后跳回页面并更新信息
+		var bankMs = [];
+		for(var i = 0;i<url.length;i++){
+			bankMs.push(decodeURI(url[i].split("=")[1]));
+		};
+		$(".select_bank img").attr("src",bankMs[0]);
+		$(".select_bank p").text(bankMs[1]);
+		$(".select_bank span").text(bankMs[2]);
+		$(".select_bank").on(touchstart,function(){
+			window.location.href = "Select_bank_card.html?index="+bankMs[3];
+		});
+		var index = window.location.href.split("?")[1].split("=")[1];
+		$(".bank_card_box").find("li").eq(index).addClass('select_active').siblings('li').removeClass('select_active');
+	}catch(e){
+		//默认跳转
+		jumpPage($(".select_bank"),"Select_bank_card.html");
+	};
 })(jQuery);
 
 //左右滑动列表封装函数

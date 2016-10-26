@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="format-detection" content="telephone=no">
+	<title>收支明细</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/my.css"/>
+	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../js/rem.js"></script>
+	<script type="text/javascript" src="../js/swiper-3.3.1.jquery.min.js"></script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+</head>
+<body>
+	<!-- head start -->
+	<header class="header psa clear bg-color1 bg-color3">
+		<span class="back-button" onclick="history.go(-1)">
+			<i></i>
+			收支明细
+		</span>
+	</header>
+	<!-- head end -->
+
+	<!-- content start -->
+	<section class="mt9">
+		<ul class="set_password balance_payments">
+			<li class="set_password_item balance_payments_item">
+				<div class="balance_payments_time">
+					<p>今天</p>
+					<time>13:20</time>
+				</div>
+				<div class="balance_payments_img">
+					<img src="../images/my/payments1.png" width="100%" height="100%" />
+				</div>
+				<div class="balances">
+					<p>300.00</p>
+					<span>余额提现</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item">
+				<div class="balance_payments_time">
+					<p>今天</p>
+					<time>10:09</time>
+				</div>
+				<div class="balance_payments_img">
+					<img src="../images/my/payments1.png" width="100%" height="100%" />
+				</div>
+				<div class="balances">
+					<p>800.00</p>
+					<span>账户充值</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item">
+				<div class="balance_payments_time">
+					<p>今天</p>
+					<time>10:09</time>
+				</div>
+				<div class="balance_payments_img">
+					<img src="../images/my/payments2.png" width="100%" height="100%" />
+				</div>
+				<div class="balances">
+					<p>+800.00</p>
+					<span>武汉市某某公司</span>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<!-- content end -->
+	<script type="text/javascript" src="../js/mian.js"></script>
+	<script type="text/javascript">
+		// jumpPage($(".account-settings").eq(2).find("li").eq(0),"all-attention.html");
+		// jumpPage($(".account-settings").eq(2).find("li").eq(1),"all-fan.html");
+	</script>
+</body>
+</html>

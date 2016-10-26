@@ -90,8 +90,17 @@
 
 	<script type="text/javascript" src="../js/mian.js"></script>
 	<script type="text/javascript">
+		jumpPage($(".account-settings").eq(0).find("li").eq(2),"set-password.html");
+		jumpPage($(".settings_item_num"),"cell_phone_num.html");
+		jumpPage($(".account-settings").eq(0).find("li").eq(1),"information-perfect.html");
+
+		jumpPage($(".account-settings").eq(1).find("li").eq(0),"balance-payments.html");
+		jumpPage($(".account-settings").eq(1).find("li").eq(1),"account-recharge.html");
+		jumpPage($(".account-settings").eq(1).find("li").eq(2),"balance_withdrawal.html");
+
 		jumpPage($(".account-settings").eq(2).find("li").eq(0),"all-attention.html");
 		jumpPage($(".account-settings").eq(2).find("li").eq(1),"all-fan.html");
 	</script>
+	
 </body>
 </html>

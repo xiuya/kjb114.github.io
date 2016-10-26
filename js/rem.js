@@ -5,9 +5,15 @@
 function defaultfont() {  
     var sw = $(window).width();  
     var pw = 750;
-    var f = parseInt(100*sw/pw); 
+    var f = parseInt(100*sw/pw);
+    var isMObile = /Mobile/.test(window.navigator.userAgent);
+    //如果是pc端，固定100px大小
+    if(!isMObile){
+        if(f>100){f=100}
+    };
     $('html').css('font-size', f+'px');  
-}
+};
+
 
 /*之所以要延时100ms再调用这个函数是因为  
 如果不这样屏幕宽度加载会有误差*/   

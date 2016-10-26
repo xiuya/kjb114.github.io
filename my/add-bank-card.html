@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="format-detection" content="telephone=no">
+	<title>添加银行卡</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/my.css"/>
+	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../js/rem.js"></script>
+	<script type="text/javascript" src="../js/swiper-3.3.1.jquery.min.js"></script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+</head>
+<body>
+	<!-- head start -->
+	<header class="header psa clear bg-color1 bg-color3">
+		<span class="back-button bankcard" onclick="history.go(-1)">
+			<i></i>
+			添加银行卡
+		</span>
+	</header>
+	<!-- head end -->
+
+	<!-- content start -->
+	<section class="mt9">
+		<p class="add-bank-card-des">请绑定持卡人本人的银行卡</p>
+		<ul class="set_password add-bank-card">
+			<li class="set_password_item">
+				持卡人
+				<input class="set_password_input cell_phone_num cell_num" type="text" name="" placeholder="请输入持卡人姓名" />
+			</li>
+			<li class="set_password_item">
+				卡号
+				<input class="set_password_input cell_phone_num" type="text" name="" placeholder="请输入银行卡号" />
+			</li>
+		</ul>
+		
+		<input class="set_password_btn ok_withdrawals" type="button" name="" value="下一步" />
+			
+	</section>
+	<!-- content end -->
+	<script type="text/javascript" src="../js/mian.js"></script>
+	<script type="text/javascript">
+		var Input = $(".set_password_item input");
+		//验证姓名
+		Input.eq(0).keyup(function(){
+			var val = $(this).val();
+			var reg = /^[\u4e00-\u9fa5]{2,4}$/.test(val);
+			if(reg){
+				$(this).attr("status","1");
+			}else{
+				$(this).attr("status","0");
+			};
+			showBtn();
+		});
+		//验证银行卡
+		Input.eq(1).keyup(function(){
+			var val = $(this).val();
+			var reg = /^\d{16,19}$/.test(val);
+			if(reg){
+				$(this).attr("status","1");
+			}else{
+				$(this).attr("status","0");
+			};
+			showBtn();
+		});
+		
+		//激活按钮
+		function showBtn(){
+			if(Input.eq(0).attr("status")==="1"&&Input.eq(1).attr("status")==="1"){
+					$(".set_password_btn").removeClass('ok_withdrawals');
+					$(".set_password_btn").attr("status","1");
+				}else{
+					$(".set_password_btn").addClass('ok_withdrawals');
+					$(".set_password_btn").attr("status","0");
+				};
+		};
+
+		$(".set_password_btn").on(touchstart,function(){
+			var status = $(this).attr("status");
+			switch (status) {
+				case "1":
+					console.log("可以发送请求了！")
+					break;
+				case "0":
+					break;
+			};
+		})
+	</script>
+</body>
+</html>

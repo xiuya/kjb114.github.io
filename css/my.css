@@ -63,3 +63,148 @@
 .focus-on-color1{color:#666;}
 .focus-on-color2{color:#ff9511;}
 /* 全部关注 and 全部粉丝 end */
+
+/* 设置密码 start */
+.set_password{
+	width: 100%;border-top:1px solid #ddd;border-bottom:1px solid #ddd;
+	background:#fff;margin:1.3rem 0;
+}
+.set_password_item{
+	margin:0 0.25rem;padding: 0.25rem 0;border-bottom:1px solid #ddd;
+	font-size:0.28rem;
+}
+.set_password_item:last-child{
+	border-bottom:none;
+}
+.set_password_input{
+	margin-left:0.25rem;padding:0 0.25rem;background:#fff;
+	border-left:1px solid #eee;font-size:0.2rem;
+}
+
+.set_password_btn{
+	margin:0 auto;display:block;width:7.03rem;padding:0.25rem;background:#00b1e3;
+	color:#fff;border-radius:3px;border:none;
+}
+/* 设置密码 end */
+
+/* 更换手机号 start */
+.set_num_btn{
+	margin-top:-0.9rem;
+}
+.cell_phone_num{border-left:none;padding:0;}
+.cell_num{
+	margin-left:0.5rem;font-size:0.25rem;color:#999;
+}
+/* 更换手机号 end */
+
+/* 收支明细 start */
+.balance_payments_item{
+	display:flex;display:-webkit-flex;flex-flow:row nowrap;align-items:center;
+	padding:0.35rem 0;
+}
+.balance_payments_img{width: 0.71rem;height: 0.73rem;margin:0 0.6rem;}
+.balance_payments_time,.balances span{color:#999;}
+.balance_payments_time p,.balances p{font-size:0.36rem;}
+/* 收支明细 end */
+
+
+/* 余额提现 start */
+.select_bank{
+	width: 100%;padding:0.3rem 0.25rem;background:#fff;
+	display:flex;display:-webkit-flex;flex-flow:row nowrap;
+	align-items:center;font-size:0.28rem;
+	background:url(../images/my/right_icon.png) center right 0.25rem no-repeat,#fff;
+	background-size: 0.2rem 0.35rem;border-top:1px solid #ddd;border-bottom:1px solid #ddd;
+}
+.select_bank_img{
+	width: 0.71rem;height: 0.73rem;
+	margin-right:0.4rem;
+}
+.select_bank_description span{
+	color:#999;
+}
+.balance_payments_input{
+	margin:0.4rem 0;
+}
+.available_balance{
+	padding:0.2rem 0;font-size:0.25rem;color:#999;padding-left:0.25rem;
+}
+.ok_withdrawals{background:#eee;color:#bbb;}
+/* 余额提现 end */
+
+/* 选择银行卡 start */
+header.bg-color3 .bankcard{
+	width:2rem;
+}
+.add{
+	height: 100%;line-height:1.1rem;
+	width:0.85rem;text-align:center;
+}
+.add i{
+	display:inline-block;width: 0.4rem;height: 0.36rem;
+	background:url(../images/my/add_icon.png) center center no-repeat;
+	background-size:cover;
+}
+.bank_card_img{
+	margin:0;margin-right:0.2rem;
+}
+.bank_card_msg span{
+	color:#333;font-size:0.25rem;
+}
+.bank_card_msg p{
+	display:inline-block;font-size:0.25rem;
+}
+.bank_card_box li:first-child{border-top:0;}
+.remove_active{background:transparent;}
+.select_active{
+	background:url(../images/my/select_bank.png) center right 0.1rem no-repeat;
+	background-size: 0.35rem 0.3rem;
+}
+/* 选择银行卡 end */
+
+/* 添加银行卡 start */
+.add-bank-card{margin:0;margin-bottom:0.7rem;}
+.add-bank-card li:first-child input{
+	margin-left:0.2rem;
+}
+.add-bank-card li{padding:0.35rem 0;}
+.add-bank-card li:last-child input{
+	margin-left:0.5rem;
+}
+.add-bank-card-des{font-size: 0.24rem;color:#999;padding:0.25rem 0.25rem}
+/* 添加银行卡 end */
+
+/* 账户充值 start */
+.select_payment_close{
+	border-bottom:1px solid #ddd;text-align:center;padding:0.25rem 0;
+	position:absolute;bottom:7.9rem;left:0;width:100%;z-index:9999999999;
+	background:#fefefe;transform:translate3d(0,9rem,0);transition: .3s ease;
+}
+.select_payment_close i{
+	font-size:0.4rem;color:#999;margin-left:0.25rem;font-family: simsun;
+	position:absolute;left:0;font-weight:600;
+}
+.select_payment{
+	margin: 0;position:absolute;bottom:0;left:0;
+	padding-bottom:1.5rem;height:8.8rem;background:#fefefe;
+	overflow-y:auto;transform:translate3d(0,9rem,0);transition: .3s ease;
+}
+.select_payment li{padding:0.25rem 0;}
+.select_payment li:last-child{
+	text-indent:0.25rem;
+}
+/* 账户充值 end */
+
+/*账户认证 and 完善资料end start*/
+.authentication{background-color: #fff;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;margin-top: 1.3rem;}
+.authentication li{margin:0 0.25rem;height: 0.8rem;line-height: 0.8rem;border-bottom: 1px solid #ddd;}
+.authentication li p{float: left;color:#333;font-size: 0.28rem;min-width: 1.3rem;}
+.authentication li input{float:left;font-size: 0.2rem;line-height: 0.78rem;background-color: #fff;margin-left: 0.3rem;width: 4.5rem;}
+.authentication li span{float:right;color:#999;font-size: 0.28rem;height: 100%;}
+.authentication li span b{display: inline-block;width: 0.18rem;height: 0.3rem;background: url(../images/my/right_icon.png) center center no-repeat;background-size: cover;margin-left: 0.2rem;float:right;margin-top: 0.25rem;}
+.authentication li.last-li{border:none;}
+.address-msg{height: 1.8rem;padding:0.1rem 0.25rem;font-size: 0.28rem;color:#999;width: 100%;display: block;resize:none;}
+.next-button{color:#bbb;text-align: center;font-size: 0.3rem;background-color: #eee;border:none;border-radius: 3px;height: 0.8rem;line-height: 0.8rem;display: block;width: 7rem;margin:0 auto;}
+.authentication-button{margin-top: 0.85rem;}
+.info-perf-button{margin-top: 0.3rem;}
+/*账户认证 and 完善资料end*/

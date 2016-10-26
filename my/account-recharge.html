@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="format-detection" content="telephone=no">
+	<title>账户充值</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/my.css"/>
+	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../js/rem.js"></script>
+	<script type="text/javascript" src="../js/swiper-3.3.1.jquery.min.js"></script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+</head>
+<body>
+	<!-- head start -->
+	<header class="header psa clear bg-color1 bg-color3">
+		<span class="back-button" onclick="history.go(-1)">
+			<i></i>
+			账户充值
+		</span>
+	</header>
+	<!-- head end -->
+
+	<!-- content start -->
+	<section class="mt9">
+		<div style="padding-bottom:0.4rem;"></div>
+		<div class="select_bank">
+			<div class="select_bank_img">
+				<img src="../images/my/payments1.png" width="100%" height="100%">
+			</div>
+			<div class="select_bank_description">
+				<p>中国建设银行</p>
+				<span>尾号5850</span>
+			</div>
+		</div>
+		
+		<ul class="set_password balance_payments_input">
+			<li class="set_password_item">
+				金额
+				<input class="set_password_input" type="text" name="" placeholder="请输入充值金额" />
+			</li>
+		</ul>
+		
+		<input class="set_password_btn ok_withdrawals" type="button" name="" value="下一步" />
+			
+	</section>
+	<!-- content end -->
+
+	<!-- setHead start -->
+	<div class="setHead_mask">
+		<div class="select_payment_close"><i>×</i>选择付款方式</div>
+		<ul class="set_password balance_payments bank_card_box select_payment">
+			<li class="set_password_item balance_payments_item remove_active select_active" style="margin-top:0.9rem;">
+				<div class="balance_payments_img bank_card_img">
+					<img src="../images/my/payments1.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg">
+					<p>中国建设银行</p>
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item remove_active">
+				<div class="balance_payments_img bank_card_img">
+					<img src="../images/my/jtyh_img.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg">
+					<p>交通银行储蓄卡</p> 
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item remove_active">
+				<div class="balance_payments_img bank_card_img">
+					<img src="../images/my/zgyh_img.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg">
+					<p>中国银行储蓄卡</p>
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item remove_active">
+				<div class="balance_payments_img bank_card_img">
+					<img src="../images/my/gsyh_img.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg">
+					<p>中国工商银行储蓄卡</p>
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+			<li class="setting_item">
+				使用新卡付款
+			</li>
+		</ul>
+	</div>
+	<!-- setHead end  -->
+
+	<script type="text/javascript">
+		//当提现金额大于或等于1元，激活提现按钮
+		$(".set_password_input").keyup(function() {
+			var val = $(this).val();
+			if(val >= 1){
+				$(".set_password_btn").removeClass('ok_withdrawals');
+			}else{
+				$(".set_password_btn").addClass('ok_withdrawals');
+			};
+		});
+		
+		//选择付款银行卡弹窗事件
+		$(".select_bank").click(function(){
+			$(".setHead_mask").fadeIn(300,function(){
+				$(".select_payment_close").css({
+					"transform":"translate3d(0,0,0)"
+				});
+				$(".select_payment").css({
+					"transform":"translate3d(0,0,0)"
+				});
+			});
+		});
+
+		//关闭弹窗事件
+		$(".select_payment_close i").click(function(){
+			close_select();
+		});
+
+		//关闭弹窗函数
+		function close_select(){
+			$(".select_payment_close").css({
+				"transform":"translate3d(0,9rem,0)"
+			});
+			$(".select_payment").css({
+				"transform":"translate3d(0,9rem,0)"
+			});
+			setTimeout(function(){
+				$(".setHead_mask").fadeOut(300);
+			},300);
+		};
+
+		//选择银行卡切回页面更新信息
+		var bank_src = "";
+		var bank_name = "";
+		var bank_des = "";
+		$(".remove_active").click(function(){
+			var index = $(this).index();
+			$(this).addClass("select_active").siblings(".remove_active").removeClass("select_active");
+			bank_src = $(this).find("img").attr("src");
+			bank_name = $(this).find("p").text();
+			bank_des = $(this).find("span").text();
+			close_select();
+
+			$(".select_bank img").attr("src",bank_src);
+			$(".select_bank p").text(bank_name);
+			$(".select_bank span").text(bank_des);
+		});
+		
+		//点击使用新卡跳转，绑定银行卡
+		jumpPage($(".setting_item"),"add-bank-card1.html");
+	</script>
+	
+</body>
+</html>

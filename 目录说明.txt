@@ -61,7 +61,16 @@ kjbWechat/
   |     |-- account-settings.html  账户设置
   |     |-- all-attention.html     全部关注
   |     |-- all-fen.html           全部粉丝
-  |     |--
+  |     |-- account-recharge.html  账户充值
+  |     |-- add-bank-card1.html    充值页面添加银行卡
+  |     |-- add-bank-card.html     提现页面添加银行卡
+  |     |-- account-authentication.html  账户认证
+  |     |-- balance_withdrawal.html  余额提现
+  |     |-- balance-payments.html    收支明细
+  |     |-- cell_phone_num.html	     更换手机号
+  |     |-- information-perfect.html 完善资料
+  |     |-- Select_bank_card.html   选择银行卡
+  |     |-- set-password.html   设置密码
   |     |--
   |     |--
   |     |--
