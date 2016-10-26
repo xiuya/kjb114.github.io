@@ -97,6 +97,10 @@
 	<!-- setHead end  -->
 
 	<script type="text/javascript">
+		var isEv = /Mobile/.test(window.navigator.userAgent);
+		var touchstart = "";
+		var touchstart = isEv?"touchstart":"click";
+
 		//当提现金额大于或等于1元，激活提现按钮
 		$(".set_password_input").keyup(function() {
 			var val = $(this).val();
@@ -108,7 +112,7 @@
 		});
 		
 		//选择付款银行卡弹窗事件
-		$(".select_bank").click(function(){
+		$(".select_bank").on(touchstart,function(){
 			$(".setHead_mask").fadeIn(300,function(){
 				$(".select_payment_close").css({
 					"transform":"translate3d(0,0,0)"
@@ -120,7 +124,7 @@
 		});
 
 		//关闭弹窗事件
-		$(".select_payment_close i").click(function(){
+		$(".select_payment_close i").on(touchstart,function(){
 			close_select();
 		});
 
@@ -141,7 +145,7 @@
 		var bank_src = "";
 		var bank_name = "";
 		var bank_des = "";
-		$(".remove_active").click(function(){
+		$(".remove_active").on(touchstart,function(){
 			var index = $(this).index();
 			$(this).addClass("select_active").siblings(".remove_active").removeClass("select_active");
 			bank_src = $(this).find("img").attr("src");
