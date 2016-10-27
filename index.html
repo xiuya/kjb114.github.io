@@ -548,7 +548,7 @@
 				//console.log(stop)
 
 				if(stop<=-90 && (clientH-scrollH)<=-90){
-					$('.header').css("background","#00A2CA");
+					$('.header').css("background","#00b1e4");
 				}else{
 					$('.header').css("background","transparent");
 				};
@@ -570,8 +570,10 @@
 		};
 
 		//跳转页面
+		jumpPage($(".footer ul").find("li").eq(0),"index.html");
 		jumpPage($(".footer ul").find("li").eq(1),"lists/Bidding-Hall-list.html");
 		jumpPage($(".footer ul").find("li").eq(2),"lists/Reward-Hall-list.html");
+		jumpPage($(".footer ul").find("li").eq(3),"my/my.html");
 	</script>
 </body>
 </html>

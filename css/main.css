@@ -20,7 +20,7 @@ header.bg-color2{background:#00171d;}
 /* header end */
 
 /* footer start */
-.footer{bottom:0;left:0;width: 100%;height: 0.98rem;background:#00A2CA;z-index: 999999;}
+.footer{bottom:0;left:0;width: 100%;height: 0.98rem;background:#00b1e4;z-index: 999999;}
 .footer ul li{width: 25%;height: 0.98rem;float:left;}
 .footer ul li span{display:block;text-align:center;font-size:0.2rem;}
 .footer ul li i{display:block;width: 0.61rem;height: 0.57rem;margin:0 auto;margin-top:0.06rem;}
