@@ -47,6 +47,8 @@ html,body{overflow:hidden;}
 body{overflow-y:scroll;}
 
 input[type="submit"], input[type="reset"], input[type="button"], button { -webkit-appearance: none;}
+::-webkit-scrollbar{width:0px}
+::scrollbar{width:0px}
 
 .ma{ margin: 0 auto;}
 .tc {

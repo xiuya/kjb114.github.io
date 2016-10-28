@@ -44,14 +44,17 @@
 .Service_provider ul li .Service_img{width: 2.76rem;height: 1.4rem;}
 .Service_provider ul li p{width: 2rem;height: 0.8rem;overflow:hidden;margin:0 auto;margin-bottom:0.05rem;font-size:0.2rem;text-align:center;}
 .Service_provider ul li:last-child{margin-right:0;}
+.zyhp_box{overflow-x: auto;}
+.tjfws_wrap{height: 2.3rem;}
 /* 推荐服务商 end */
 
 /* 技术服务 start */
-.technical_service ul{width: 11.64rem;}
 .technical_service ul li{width: 3.8rem;}
+.technical_service ul li:last-child{margin-right:0;}
 .technical_service ul li .Service_img{height: 1.35rem;width: 3.76rem;}
 .technical_service ul li p{font-size:0.24rem;color:#666;}
 .technical_service ul li .ts_description{width:3.2rem;height: 1rem;margin-bottom:0.2rem;overflow:hidden;font-size:0.12rem;padding:0.28rem 0;padding-top:0.18rem;}
+.jsfw_wrap{height:3.5rem;}
 /* 技术服务 end */
 
 /* 优质项目 start */

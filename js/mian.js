@@ -101,7 +101,7 @@ if(isEv){
 	};
 })(jQuery);
 
-//左右滑动列表封装函数
+/*//左右滑动列表封装函数
 function downMove($ul,$li){	
 	var childL = 0;
 	var childW = 0;
@@ -140,18 +140,16 @@ function downMove($ul,$li){
 				//超出归位
 				if(childL > 0){
 					$ul.css({
-						"transition":"all .3s",
+						"transition":"all .5s",
 						"transform":"translate3d(0,0,0)"
 					});
 				}else if(childL <= (clientW-childW)){
-					var jl = clientW-childW-10;
-
 					$ul.css({
-						"transition":"all 0.3s",
-						"transform":"translate3d("+ (clientW-childW) +"px,0,0)"
+						"transition":"all 0.5s",
+						"transform":"translate3d("+ (clientW-childW) +"rem,0,0)"
 					});
 				};
 			});
 		});
 	};
-};
+};*/
