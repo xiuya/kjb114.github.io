@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="format-detection" content="telephone=no">
+	<title>我的</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/my.css"/>
+	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../js/rem.js"></script>
+</head>
+<body>
+	<!-- head start -->
+	<header class="header psa clear bg-color1">
+		<span class="back-button">
+			<i></i>
+			 全部粉丝 
+		</span>
+	</header>
+	<!-- head end -->
+
+	<!-- content start -->
+	<section class="mtop-btm container">
+		<header class="my_head_wrap">
+			<div class="my_head_img">
+				<img src="../images/my/heda_img.png" width="100%" height="100%" />
+			</div>
+			<div class="my_name">
+				<h4>silently2016</h4>
+				<span>156****6028</span>
+			</div>
+		</header>
+		<div class="my_balance b5">
+			<div class="my_balance_ck">
+				<b>9,000,807,68</b>
+				<i></i>
+			</div>
+			<div class="my_balance_wrap">
+				<div class="my_balance_item ky_blance">
+					<i></i>
+					<p>
+						<span class="my_balance_names">
+							可用余额
+						</span>
+						<span class="my_balances">
+							890,990.68
+						</span>
+					</p>
+				</div>
+				<div class="my_balance_item dj_blance">
+					<i></i>
+					<p>
+						<span class="my_balance_names">
+							冻结金额
+						</span>
+						<span class="my_balances">
+							890,990.68
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="class_items b5 item_setting">
+			<span><i></i>账户设置</span>
+		</div>
+		<div class="class_items b5 item_jyjl">
+			<span><i></i>交易记录</span>
+			<span class="ck_all_jyjl">查看所有交易</span>
+		</div>
+		<ul class="jy_list">
+			<li>
+				<span><i>●</i>数据交换前置开发系统</span>
+				<span>￥1000.00</span>
+			</li>
+			<li>
+				<span><i>●</i>数据交换前置开发系统</span>
+				<span>￥1000.00</span>
+			</li>
+			<li>
+				<span><i>●</i>数据交换前置开发系统</span>
+				<span>￥1000.00</span>
+			</li>
+			<li>
+				<span><i>●</i>数据交换前置开发系统</span>
+				<span>￥1000.00</span>
+			</li>
+			<li>
+				<span><i>●</i>数据交换前置开发系统</span>
+				<span>￥1000.00</span>
+			</li>
+			<li>
+				<span><i>●</i>数据交换前置开发系统</span>
+				<span>￥1000.00</span>
+			</li>
+			<li>
+				<span><i>●</i>数据交换前置开发系统</span>
+				<span>￥1000.00</span>
+			</li>
+			<li>
+				<span><i>●</i>数据交换前置开发系统</span>
+				<span>￥1000.00</span>
+			</li>
+		</ul>
+	</section>
+	<!-- content end -->
+
+	<!-- foot start -->
+	<footer class="footer psa">
+		<ul class="clear">
+			<li class="foot1"><i></i><span class="c5">首页</span></li>
+			<li class="foot2"><i></i><span class="c5">招标</span></li>
+			<li class="foot3"><i></i><span class="c5">悬赏</span></li>
+			<li class="foot4"><i></i><span class="c5">我的</span></li>
+		</ul>
+	</footer>
+	<!-- foot end -->
+	<!-- <script type="text/javascript" src="../js/mian.js"></script> -->
+	<script type="text/javascript">
+		//跳转页面
+		jumpPage($(".footer ul").find("li").eq(0),"../index.html");
+		jumpPage($(".footer ul").find("li").eq(1),"../lists/Bidding-Hall-list.html");
+		jumpPage($(".footer ul").find("li").eq(2),"../lists/Reward-Hall-list.html");
+		jumpPage($(".item_setting"),"account-settings.html");
+	</script>
+</body>
+</html>

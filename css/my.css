@@ -2,17 +2,20 @@
 /* 账户设置 start */
 .account-settings{background:#fefefe;margin-bottom:0.4rem;}
 .setting_item{
-		padding:0.25rem;border-bottom: 1px solid #ddd;align-items:center;
-		display:flex;display:-webkit-flex;justify-content:space-between;
+		padding:0.25rem;border-bottom: 1px solid #ddd;
 		background:url(../images/my/right_icon.png) center right 0.25rem no-repeat;
 		font-size:0.28rem;background-size:0.2rem 0.35rem;
 	}
+.set_head{
+	line-height:1.11rem;
+}
 .setting_head_img{
 	width: 1.11rem;height: 1.11rem;border-radius:50%;
 	margin-right:0.5rem;
 }
 .settings_item_num{
 	color:#999;font-size:0.28rem;padding-right: 0.5rem;
+	margin-top:0.03rem;
 }
 .setting_btn{
 	width: 100%;padding:0.25rem 0;background:#fff;
@@ -78,7 +81,7 @@
 }
 .set_password_input{
 	margin-left:0.25rem;padding:0 0.25rem;background:#fff;
-	border-left:1px solid #eee;font-size:0.2rem;
+	border-left:1px solid #eee;font-size:0.25rem;
 }
 
 .set_password_btn{
@@ -99,7 +102,7 @@
 
 /* 收支明细 start */
 .balance_payments_item{
-	display:flex;display:-webkit-flex;flex-flow:row nowrap;align-items:center;
+	line-height:0.73rem;
 	padding:0.35rem 0;
 }
 .balance_payments_img{width: 0.71rem;height: 0.73rem;margin:0 0.6rem;}
@@ -111,8 +114,7 @@
 /* 余额提现 start */
 .select_bank{
 	width: 100%;padding:0.3rem 0.25rem;background:#fff;
-	display:flex;display:-webkit-flex;flex-flow:row nowrap;
-	align-items:center;font-size:0.28rem;
+	font-size:0.28rem;
 	background:url(../images/my/right_icon.png) center right 0.25rem no-repeat,#fff;
 	background-size: 0.2rem 0.35rem;border-top:1px solid #ddd;border-bottom:1px solid #ddd;
 }
@@ -167,7 +169,7 @@ header.bg-color3 .bankcard{
 .add-bank-card li:first-child input{
 	margin-left:0.2rem;
 }
-.add-bank-card li{padding:0.35rem 0;}
+.add-bank-card li{padding:0.3rem 0;}
 .add-bank-card li:last-child input{
 	margin-left:0.5rem;
 }
@@ -189,7 +191,7 @@ header.bg-color3 .bankcard{
 	padding-bottom:1.5rem;height:8.8rem;background:#fefefe;
 	overflow-y:auto;transform:translate3d(0,9rem,0);transition: .3s ease;
 }
-.select_payment li{padding:0.25rem 0;}
+.select_payment li{padding:0.25rem 0;line-height:0.73rem;}
 .select_payment li:last-child{
 	text-indent:0.25rem;
 }
@@ -208,3 +210,105 @@ header.bg-color3 .bankcard{
 .authentication-button{margin-top: 0.85rem;margin-bottom: 0.5rem;}
 .info-perf-button{margin-top: 0.3rem;}
 /*账户认证 and 完善资料end*/
+
+/* 我的 start */
+.my_head_wrap{
+	height:2.3rem;padding:0 0.2rem;
+	display:flex;display:-webkit-flex;flex-flow:row nowrap;
+	align-items:center;background:url(../images/my/rt_icon.png) center right 0.2rem no-repeat,#00b1e4;
+	background-size: 0.23rem 0.39rem;
+}
+.my_head_img{
+	width: 0.96rem;height: 0.96rem;border-radius:50%;
+}
+.my_name{
+	margin-left:0.3rem;color:#B8E2F4;font-size:0.24rem;
+}
+.my_name h4{
+	color:#fff;margin-bottom:0.2rem;
+	font-size:0.28rem;
+}
+
+.my_balance{
+	
+}
+.my_balance_ck{
+	padding:0.3rem 0.2rem;color:#000;font-size:0.36rem;
+	display:flex;display:-webkit-flex;flex-flow:row nowrap;
+	align-items:center;
+}
+.my_balance_ck i{
+	display:block;width: 0.42rem;height: 0.24rem;
+	background:url(../images/my/ck_icon.png) center center no-repeat;
+	background-size:cover;margin-left:0.5rem;
+}
+.my_balance_wrap{
+	border:1px solid #ddd;border-left:none;border-right:none;
+	padding:0.1rem 0.2rem;display:flex;display:-webkit-flex;flex-flow:row nowrap;
+	align-items:center;
+}
+.my_balance_item{
+	width: 50%;display:flex;display:-webkit-flex;flex-flow:row nowrap;
+	align-items:center;padding:0.2rem 0;
+
+}
+.my_balance_item span{display:block;font-size:0.3rem;}
+.my_balance_item i{
+	margin-right:0.2rem;
+}
+.ky_blance i{
+	width: 0.54rem;height: 0.54rem;
+	background:url(../images/my/kye_icon.png) center center no-repeat;
+	background-size:cover;
+}
+.dj_blance{
+	border-left:1px solid #ddd;
+}
+.dj_blance i{
+	margin-left:0.2rem;width: 0.67rem;height: 0.47rem;
+	background:url(../images/my/dje_icon.png) center center no-repeat;
+	background-size: cover;
+}
+.my_balance_names{color:#000;}
+.my_balances{color:#999;}
+
+.class_items{
+	padding:0.3rem 0.2rem;display:flex;display:-webkit-flex;flex-flow:row nowrap;
+	align-items:center;border:1px solid #ddd;border-left:none;border-right:none;
+	margin-top:0.2rem;font-size:0.28rem;justify-content: space-between;
+	background:url(../images/my/right_icon.png) center right 0.2rem no-repeat,#fff;
+	background-size: 0.18rem 0.3rem;
+}
+.class_items span{
+	display:inlne-flex;display:-webkit-inline-flex;
+	flex-flow:row nowrap;
+}
+.class_items i{
+	margin-right:0.1rem;
+}
+.item_setting i{
+	width: 0.39rem;height: 0.37rem;background:url(../images/my/setting_icon.png) center center no-repeat;
+	background-size:cover;
+}
+.item_jyjl i{	
+	width: 0.39rem;height: 0.4rem;background:url(../images/my/jyjl_icon.png) center center no-repeat;
+	background-size: cover;
+}
+.ck_all_jyjl{margin-right:0.4rem;color:#999;}
+.jy_list{
+	list-style-type: disc;
+}
+.jy_list li{
+	color:#999;font-size:0.28rem;background:url(../images/my/right_icon.png) center right 0.2rem no-repeat,#fff;
+	background-size: 0.18rem 0.3rem;padding:0.25rem 0.2rem;border-bottom:1px solid #ddd;
+	display:flex;display:-webkit-flex;flex-flow:row nowrap;
+	align-items:center;
+	justify-content: -webkit-space-between;
+}
+.jy_list li span:last-child{
+	margin-right:0.4rem;
+}
+.jy_list li span i{
+	font-weight:400;font-size:0.2rem;padding-right:0.2rem;
+}
+/* 我的 end */

@@ -7,10 +7,6 @@ function defaultfont() {
     var pw = 750;
     var f = parseInt(100*sw/pw);
     var isMObile = /Mobile/.test(window.navigator.userAgent);
-    //如果是pc端，固定100px大小
-    if(!isMObile){
-        if(f>100){f=100}
-    };
     $('html').css('font-size', f+'px');  
 };
 
