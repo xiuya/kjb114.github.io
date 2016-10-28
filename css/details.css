@@ -16,7 +16,7 @@
 
 /*悬赏详情-start*/
 .download-file{width: 3.5rem;height: 0.4rem;position: relative;z-index: 50;top:0;opacity: 0;filter: alpha(opacity=0);}
-.download-file-text{position: relative;z-index: 30;margin-left: -3.5rem;top:0;background-color: transparent;font-size: 0.28rem;}
+.download-file-text{position: relative;z-index: 30;top:0;background-color: transparent;font-size: 0.28rem;color:#FF6100;}
 .download-img{width: 0.3rem;height: 0.3rem;display: inline-block;vertical-align: -0.04rem;}
 .download-file-text::-webkit-input-placeholder{color:#ff6100;}
 .download-file-text::-moz-placeholder{color:#ff6100;} /* Mozilla Firefox 19+ */

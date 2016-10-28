@@ -13,7 +13,7 @@
 
 /*header 修改样式*/
 header.bg-color1{background-color: #00b1e4;}
-header.bg-color1 .back-button{float:left;width: 1.7rem;height: 100%;line-height: 0.9rem;font-size: 0.3rem;font-weight: normal;color: #fff;margin-left: 0.2rem;}
+header.bg-color1 .back-button{float:left;min-width: 1.7rem;height: 100%;line-height: 0.9rem;font-size: 0.3rem;font-weight: normal;color: #fff;margin-left: 0.2rem;}
 header.bg-color1 .back-button i{display:inline-block;margin-right:0.1rem;width: 0.28rem;height: 0.4rem;background:url(../images/details/back-arrow.png)center center;background-size:100% 100%;vertical-align: middle;margin-top: -0.04rem;}
 
 header.bg-color2{background:#00171d;}
@@ -34,6 +34,7 @@ header.bg-color2{background:#00171d;}
 .list_box{width: 100%;background:#fff;overflow:hidden;}
 .list_box .swiper-wrapper{}
 .swiper-slide{height: 100%;float:left;}
+.swiper-slide a{display:block;}
 .pagination{width: 100%;height: 0.65rem;text-align:center;line-height:0.65rem;}
 .pagination span{display:inline-block;width:0.12rem;height:0.12rem;border-radius:50%;background:#DDDDDD;margin:0 0.05rem;}
 .pagination .swiper-pagination-bullet-active{background:#00B1E4;}

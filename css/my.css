@@ -2,17 +2,20 @@
 /* 账户设置 start */
 .account-settings{background:#fefefe;margin-bottom:0.4rem;}
 .setting_item{
-		padding:0.25rem;border-bottom: 1px solid #ddd;align-items:center;
-		display:flex;display:-webkit-flex;justify-content:space-between;
+		padding:0.25rem;border-bottom: 1px solid #ddd;
 		background:url(../images/my/right_icon.png) center right 0.25rem no-repeat;
 		font-size:0.28rem;background-size:0.2rem 0.35rem;
 	}
+.set_head{
+	line-height:1.11rem;
+}
 .setting_head_img{
 	width: 1.11rem;height: 1.11rem;border-radius:50%;
 	margin-right:0.5rem;
 }
 .settings_item_num{
 	color:#999;font-size:0.28rem;padding-right: 0.5rem;
+	margin-top:0.03rem;
 }
 .setting_btn{
 	width: 100%;padding:0.25rem 0;background:#fff;
@@ -99,7 +102,7 @@
 
 /* 收支明细 start */
 .balance_payments_item{
-	display:flex;display:-webkit-flex;flex-flow:row nowrap;align-items:center;
+	line-height:0.73rem;
 	padding:0.35rem 0;
 }
 .balance_payments_img{width: 0.71rem;height: 0.73rem;margin:0 0.6rem;}
@@ -111,8 +114,7 @@
 /* 余额提现 start */
 .select_bank{
 	width: 100%;padding:0.3rem 0.25rem;background:#fff;
-	display:flex;display:-webkit-flex;flex-flow:row nowrap;
-	align-items:center;font-size:0.28rem;
+	font-size:0.28rem;
 	background:url(../images/my/right_icon.png) center right 0.25rem no-repeat,#fff;
 	background-size: 0.2rem 0.35rem;border-top:1px solid #ddd;border-bottom:1px solid #ddd;
 }
@@ -167,7 +169,7 @@ header.bg-color3 .bankcard{
 .add-bank-card li:first-child input{
 	margin-left:0.2rem;
 }
-.add-bank-card li{padding:0.35rem 0;}
+.add-bank-card li{padding:0.3rem 0;}
 .add-bank-card li:last-child input{
 	margin-left:0.5rem;
 }
@@ -189,7 +191,7 @@ header.bg-color3 .bankcard{
 	padding-bottom:1.5rem;height:8.8rem;background:#fefefe;
 	overflow-y:auto;transform:translate3d(0,9rem,0);transition: .3s ease;
 }
-.select_payment li{padding:0.25rem 0;}
+.select_payment li{padding:0.25rem 0;line-height:0.73rem;}
 .select_payment li:last-child{
 	text-indent:0.25rem;
 }
@@ -299,8 +301,9 @@ header.bg-color3 .bankcard{
 .jy_list li{
 	color:#999;font-size:0.28rem;background:url(../images/my/right_icon.png) center right 0.2rem no-repeat,#fff;
 	background-size: 0.18rem 0.3rem;padding:0.25rem 0.2rem;border-bottom:1px solid #ddd;
-	display:flex;display:-webkit-flex;flex-flow:row nowrap;align-items:center;
-	justify-content: space-between;
+	display:flex;display:-webkit-flex;flex-flow:row nowrap;
+	align-items:center;
+	justify-content: -webkit-space-between;
 }
 .jy_list li span:last-child{
 	margin-right:0.4rem;
