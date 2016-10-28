@@ -1,1 +1,28 @@
 ﻿@charset "utf-8";
+/*成果发布  start*/
+input.release-input::-webkit-input-placeholder{color:#333;}
+input.release-input::-moz-input-placeholder{color:#333;}
+input.release-input::-ms-input-placeholder{color:#333;}
+.release-ul input.input-title{text-overflow: ellipsis;}
+.release-title{padding: 0.3rem 0.25rem;color:#666;font-size: 0.22rem;}
+.relese-details{background-color: #fff;padding:0.1rem 0.25rem;border-top: 1px solid #ddd;border-bottom:1px solid #ddd;font-size: 0.22rem;resize:none;width: 100%;}
+.results-details{height: 3.4rem;}
+.relese-project{height: 2.0rem;}
+ul.release-ul{margin-top: 0.2rem;}
+ul.release-ul input{width: 4rem;}
+ul.project-ul{margin-bottom: 1.5rem;}
+ul.release-ul li{margin:0;padding:0 0.25rem;}
+.authentication li i{width:1px;background-color: #ddd;height: 0.5rem;margin-top:0.15rem;display: inline-block;float: left;float: left;margin-left: 0.15rem;}
+div.release-button{background-color: #00b1e4;color:#fff;margin:0.8rem 0.25rem;}
+/*所属领域选择*/
+.field-select-bg{width: 100%;height: 100%;background:rgba(0,0,0,0.5);position: absolute;top:0.9rem;z-index:1000;right:0;overflow: hidden;display: none;}
+.field-select{background-color: #fff;height: 100%;width: 5rem;position: absolute;right: 0;top:0;overflow: hidden;margin-right:-5rem;}
+.field-select-ul{position: absolute;right: 0;top:0.8rem;overflow-y: auto;height: 85%;width: 5rem;z-index:1001;overflow-x: hidden;width: 100%;}
+.field-select-ul li{color:#333;line-height: 0.8rem;border-bottom: 1px solid #ddd;font-size: 0.28rem;margin-left: 0.2rem;}
+.field-select-ul li.field-selected{color:#ff7200;}
+.field-select-bg h2{font-size: 0.28rem;color:#333;line-height: 0.8rem;border-bottom: 1px solid #ddd;height: 0.8rem;position: absolute;top: 0;background-color:#fff;right: 0;z-index:1002;left: 0.2rem;right:0;}
+.release-pic{background-color: #fff;border-bottom: 1px solid #ddd;padding:0.25rem;}
+.pic-icon{width: 0.4rem;height: 0.32rem;display: inline-block;background: url(../images/release/pictures-icon.png) center center no-repeat;background-size: cover;}
+/*成果发布  end*/
+
+

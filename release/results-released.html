@@ -1,0 +1,163 @@
+butt<html lang="en" style="font-size: 50px;"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<title>成果发布</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/list.css">
+	<link rel="stylesheet" type="text/css" href="../css/my.css">
+	<link rel="stylesheet" type="text/css" href="../css/release.css">
+	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../js/rem.js"></script>
+</head>
+<body class="b3">
+	<!-- head start -->
+	<header class="header psa clear bg-color1 bg-color3">
+		<span class="back-button" onclick="history.go(-1)">
+			<i></i>
+			成果发布
+		</span>
+	</header>
+	<!-- head end -->
+
+	<!-- content start -->
+	<section class="mt9 container">
+		<h2 class="release-title">项目描述</h2>
+		<textarea class="relese-details results-details" placeholder="如果我需要LOGO设计"></textarea>
+		<ul class="authentication release-ul">
+			<li>
+				<p>成果标题</p>
+				<i></i>
+				<input type="text" class="release-input input-title" disabled="disabled" placeholder="太阳能或燃气热水器淋浴管路防冻及快出...">
+			</li>
+			<li class="field-click">
+				<p>所属领域</p>
+				<i></i>
+				<input type="text" disabled="disabled" class="release-input" placeholder="家用电器">
+				<span><b></b></span>
+			</li>
+			<li>
+				<p>产品阶段</p>
+				<i></i>
+				<input type="text" disabled="disabled" class="release-input" placeholder="正在研发">
+				<span><b></b></span>
+			</li>
+			<li>
+				<p>专利所属</p>
+				<i></i>
+				<input type="text" placeholder="中国">
+				<span><b></b></span>
+			</li>
+			<li>
+				<p>专利类型</p>
+				<i></i>
+				<input type="text" placeholder="发明专利">
+				<span><b></b></span>
+			</li>
+			<li>
+				<p>专利号</p>
+				<i></i>
+				<input type="text" placeholder="输入专利号">
+			</li>
+			<li>
+				<p>授权日期</p>
+				<i></i>
+				<input type="text" disabled="disabled" placeholder="">
+				<span><b></b></span>
+			</li>
+			<li>
+				<p>支付方式</p>
+				<i></i>
+				<input type="text" disabled="disabled" placeholder="">
+				<span><b></b></span>
+			</li>
+			<li class="last-li">
+				<p>交易方式</p>
+				<i></i>
+				<input type="text" disabled="disabled" placeholder="">
+				<span><b></b></span>
+			</li>
+			<li class="last-li">
+				<p>交易方式</p>
+				<i></i>
+				<input type="text" disabled="disabled" placeholder="">
+				<span><b></b></span>
+			</li>
+			<li class="last-li">
+				<p>交易方式</p>
+				<i></i>
+				<input type="text" disabled="disabled" placeholder="">
+				<span><b></b></span>
+			</li>
+			<li class="last-li">
+				<p>交易方式</p>
+				<i></i>
+				<input type="text" disabled="disabled" placeholder="">
+				<span><b></b></span>
+			</li>
+			<li class="last-li">
+				<p>交易方式</p>
+				<i></i>
+				<input type="text" disabled="disabled" placeholder="">
+				<span><b></b></span>
+			</li>
+			<li class="last-li">
+				<p>交易方式</p>
+				<i></i>
+				<input type="text" disabled="disabled" placeholder="">
+				<span><b></b></span>
+			</li>
+		</ul>
+		<div class="next-button release-button">立即发布</div>
+	</section>
+	<!-- content end -->
+	<div class="field-select-bg">
+		<div class="field-select">
+			<h2>选择合适的类目</h2>
+			<ul class="field-select-ul">
+				<li>家用电器</li>
+				<li class="field-selected">电子信息</li>
+				<li>新能源</li>
+				<li>电气自动化</li>
+				<li>机械</li>
+				<li>新材料</li>
+				<li>轻工纺织</li>
+				<li>环保和资源</li>
+				<li>医药与医疗</li>
+				<li>仪器仪表</li>
+				<li>化学化工</li>
+				<li>橡胶塑料</li>
+				<li>食品饮料</li>
+				<li>交通运输</li>
+				<li>建筑材料</li>
+				<li>采矿冶金</li>
+				<li>航空航天</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			var isEv = /Mobile/.test(window.navigator.userAgent);
+    		var Ev = isEv?"touchstart":"click";
+			$(".field-click").on(Ev,function(){
+				$("body,html").css({"overflow":"hidden"});
+				$(".field-select-bg").css("display","block").children(".field-select").stop().animate({marginRight:"0"},"200");//所属领域右侧滑入
+
+				$(".field-select-bg").on(Ev,function(evt){
+					var self = $(evt.target);
+					if(evt.target==this){
+						$(self).children(".field-select").stop().animate({marginRight:"-5rem"},"200",function(){//所属领域从右侧滑出
+							$(self).css("display","none");//遮罩层隐藏
+							$("body,html").css({"overflow":"auto"});
+						});
+
+					}
+						
+				});
+			})
+
+		});
+	</script>
+</body></html>

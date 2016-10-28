@@ -205,6 +205,6 @@ header.bg-color3 .bankcard{
 .authentication li.last-li{border:none;}
 .address-msg{height: 1.8rem;padding:0.1rem 0.25rem;font-size: 0.28rem;color:#999;width: 100%;display: block;resize:none;}
 .next-button{color:#bbb;text-align: center;font-size: 0.3rem;background-color: #eee;border:none;border-radius: 3px;height: 0.8rem;line-height: 0.8rem;display: block;width: 7rem;margin:0 auto;}
-.authentication-button{margin-top: 0.85rem;}
+.authentication-button{margin-top: 0.85rem;margin-bottom: 0.5rem;}
 .info-perf-button{margin-top: 0.3rem;}
 /*账户认证 and 完善资料end*/
