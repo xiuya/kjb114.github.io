@@ -8,7 +8,7 @@ kjbWechat/
   |     |-- list.css   列表页样式
   |     |-- details.css  详情页样式
   |     |-- my.css	我的账户
-  |     |--
+  |     |-- release.css 发布页面样式
   |     |--
   | 	`-- 
   |
@@ -23,7 +23,7 @@ kjbWechat/
   |        |-- details   详情页图片
   |        |-- lists     列表页图片
   |        |-- my        我的账户图片
-  |        |--
+  |        |-- release   存放发布图片
   |        |--
   |        |--
   | 	   `-- 
@@ -74,6 +74,25 @@ kjbWechat/
   |     |--
   |     |--
   |     |--
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |--  release  存放项目发布页面
+  |     |
+  |     |-- issue-ender.html  发布招标
+  |     |-- post-reward.html  发布悬赏
+  |     |-- project-information.html  发布项目信息
+  |     |-- results-released.html     发布成果
+  |     |--
+  |
+  |
+  |
+  |
   |
   |
   |

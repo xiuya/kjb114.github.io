@@ -102,7 +102,6 @@
 
 /* 收支明细 start */
 .balance_payments_item{
-	line-height:0.73rem;
 	padding:0.35rem 0;
 }
 .balance_payments_img{width: 0.71rem;height: 0.73rem;margin:0 0.6rem;}
@@ -157,7 +156,7 @@ header.bg-color3 .bankcard{
 	display:inline-block;font-size:0.25rem;
 }
 .bank_card_box li:first-child{border-top:0;}
-.remove_active{background:transparent;}
+.remove_active{background:transparent;line-height:0.73rem;}
 .select_active{
 	background:url(../images/my/select_bank.png) center right 0.1rem no-repeat;
 	background-size: 0.35rem 0.3rem;
@@ -214,15 +213,16 @@ header.bg-color3 .bankcard{
 /* 我的 start */
 .my_head_wrap{
 	height:2.3rem;padding:0 0.2rem;
-	display:flex;display:-webkit-flex;flex-flow:row nowrap;
-	align-items:center;background:url(../images/my/rt_icon.png) center right 0.2rem no-repeat,#00b1e4;
+	background:url(../images/my/rt_icon.png) center right 0.2rem no-repeat,#00b1e4;
 	background-size: 0.23rem 0.39rem;
 }
 .my_head_img{
 	width: 0.96rem;height: 0.96rem;border-radius:50%;
+	margin-top:0.67rem;
 }
 .my_name{
 	margin-left:0.3rem;color:#B8E2F4;font-size:0.24rem;
+	margin-top:0.75rem;
 }
 .my_name h4{
 	color:#fff;margin-bottom:0.2rem;
@@ -234,13 +234,12 @@ header.bg-color3 .bankcard{
 }
 .my_balance_ck{
 	padding:0.3rem 0.2rem;color:#000;font-size:0.36rem;
-	display:flex;display:-webkit-flex;flex-flow:row nowrap;
-	align-items:center;
+	line-height:0.26rem;
 }
 .my_balance_ck i{
-	display:block;width: 0.42rem;height: 0.24rem;
+	width: 0.42rem;height: 0.24rem;
 	background:url(../images/my/ck_icon.png) center center no-repeat;
-	background-size:cover;margin-left:0.5rem;
+	background-size:cover;margin-left:0.2rem;display:inline-block;
 }
 .my_balance_wrap{
 	border:1px solid #ddd;border-left:none;border-right:none;
@@ -248,13 +247,13 @@ header.bg-color3 .bankcard{
 	align-items:center;
 }
 .my_balance_item{
-	width: 50%;display:flex;display:-webkit-flex;flex-flow:row nowrap;
-	align-items:center;padding:0.2rem 0;
-
+	width: 50%;
+	padding:0.2rem 0;
 }
 .my_balance_item span{display:block;font-size:0.3rem;}
 .my_balance_item i{
 	margin-right:0.2rem;
+	margin-top:0.1rem;
 }
 .ky_blance i{
 	width: 0.54rem;height: 0.54rem;
@@ -267,24 +266,24 @@ header.bg-color3 .bankcard{
 .dj_blance i{
 	margin-left:0.2rem;width: 0.67rem;height: 0.47rem;
 	background:url(../images/my/dje_icon.png) center center no-repeat;
-	background-size: cover;
+	background-size: cover;margin-top:0.15rem;
 }
 .my_balance_names{color:#000;}
 .my_balances{color:#999;}
 
 .class_items{
-	padding:0.3rem 0.2rem;display:flex;display:-webkit-flex;flex-flow:row nowrap;
-	align-items:center;border:1px solid #ddd;border-left:none;border-right:none;
-	margin-top:0.2rem;font-size:0.28rem;justify-content: space-between;
+	padding:0.3rem 0.2rem;border:1px solid #ddd;border-left:none;border-right:none;
+	margin-top:0.2rem;font-size:0.28rem;
 	background:url(../images/my/right_icon.png) center right 0.2rem no-repeat,#fff;
 	background-size: 0.18rem 0.3rem;
 }
 .class_items span{
-	display:inlne-flex;display:-webkit-inline-flex;
-	flex-flow:row nowrap;
 }
 .class_items i{
+	display:inline-block;
 	margin-right:0.1rem;
+	vertical-align: middle;
+	margin-top:-0.03rem;
 }
 .item_setting i{
 	width: 0.39rem;height: 0.37rem;background:url(../images/my/setting_icon.png) center center no-repeat;
@@ -301,9 +300,6 @@ header.bg-color3 .bankcard{
 .jy_list li{
 	color:#999;font-size:0.28rem;background:url(../images/my/right_icon.png) center right 0.2rem no-repeat,#fff;
 	background-size: 0.18rem 0.3rem;padding:0.25rem 0.2rem;border-bottom:1px solid #ddd;
-	display:flex;display:-webkit-flex;flex-flow:row nowrap;
-	align-items:center;
-	justify-content: -webkit-space-between;
 }
 .jy_list li span:last-child{
 	margin-right:0.4rem;
