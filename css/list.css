@@ -134,8 +134,8 @@
 
 .wz_list li{border-bottom:1px solid #ddd;}
 .wz_list li:last-child{border:none;}
-.wz_list h4{font-size:0.27rem;color:text-overflow:ellipsis;white-space:nowrap;overflow：hidden;}
-.wz_list p{color:#666;font-size:0.22rem;margin-top:0.4rem;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.wz_list h4{font-size:0.27rem;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.wz_list p{color:#666;font-size:0.22rem;margin-top:0.4rem;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp: 2;overflow: hidden;}
 
 .activity{height:4.15rem;display:block;}
 .activity_img{width: 100%;height: 2.8rem;}
@@ -163,3 +163,11 @@
 .advisory_expert input:first-child{margin-right:0.1rem;}
 /* 专家智库 end */
 
+/* 消息 start */
+.news li:first-child,.news_list li{background: transparent;color:#666;}
+.news li:first-child{color:#333;}
+.news .setting_item a{color:#666;display:block;}
+.news li span{color:#FB3745;}
+.news_list li span{padding: 0;color:#999;margin-top:0.03rem;font-size:0.2rem;}
+.news_list .setting_item{font-size:0.22rem;}
+.news_list .setting_item b{display:inline-block;width: 75%;height:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}

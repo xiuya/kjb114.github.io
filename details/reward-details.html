@@ -15,7 +15,7 @@
 <body>
 	<!-- head start -->
 	<header class="header psa clear bg-color1">
-		<span class="back-button">
+		<span class="back-button"  onclick="history.go(-1)">
 			<i></i>
 			悬赏详情
 		</span>
@@ -99,11 +99,31 @@
 						<p>专注于为用户提供智能化、高性能、高可靠的网络安全解决方案。</p>
 						<ol class="score-ol">
 							<li>评分：</li>
-							<li><e><img src="../images/details/stars.png"></e></li>
-							<li><e><img src="../images/details/stars.png"></e></li>
-							<li><e><img src="../images/details/stars.png"></e></li>
-							<li><e><img src="../images/details/stars.png"></e></li>
-							<li><e><img src="../images/details/stars.png"></e></li>
+							<li>
+								<e>
+									<img src="../images/details/stars.png">
+								</e>
+							</li>
+							<li>
+								<e>
+									<img src="../images/details/stars.png">
+								</e>
+							</li>
+							<li>
+								<e>
+									<img src="../images/details/stars.png">
+								</e>
+							</li>
+							<li>
+								<e>
+									<img src="../images/details/stars.png">
+								</e>
+							</li>
+							<li>
+								<e>
+									<img src="../images/details/stars.png">
+								</e>
+							</li>
 							<li class="reward-score">5.0分</li>
 						</ol>
 						<button type="button">进入店铺</button>
@@ -164,5 +184,9 @@
 		</ul>
 	</footer>
 	<!-- foot end -->
+
+	<script type="text/javascript">
+		jumpPage($(".join-r button"),"service-shops.html");
+	</script>
 </body>
 </html>
