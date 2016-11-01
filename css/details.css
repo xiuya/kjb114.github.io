@@ -44,7 +44,7 @@
 /*星级*/
 .details-ul .score-ol li,.details-ul .score-ol li e{width: 0.36rem;height: 0.35rem;}
 /*成果发布-end*/
-/*服务商店铺-start*/
+/*服务商店铺 我要投标 服务科技-start*/
 .serv-item{background-color: #fff;padding-bottom: 0.2rem;position: relative;}
 .serv-item-title{font-size: 0.28rem;border-bottom: 1px solid #ddd;height: 0.9rem;line-height: 0.9rem;}
 .serv-item-title span{width: 50%;text-align: center;display: inline-block;line-height: 0.9rem;height: 0.9rem;float:left;}
@@ -63,7 +63,8 @@
 .science-serv-unit{padding:0.35rem 0.25rem;margin-bottom: 0.1rem;}
 .science-serv-unit p{line-height: 0.6rem;font-size: 0.28rem;color:#333;}
 .science-serv-unit p b{color:#ff5f00;}
-/*服务商店铺-end*/
+/*服务商店铺 我要投标 服务科技-end*/
+/*服务科技-start*/
 .serv-img{margin:0 auto;margin-bottom: 0.4rem;overflow: hidden;}
 .serv-img1{width: 6.93rem;height: 2.88rem;}
 .serv-img2{width: 6.93rem;height: 4.35rem;}
@@ -76,3 +77,4 @@
 .science-serv-list h2{font-size: 0.28rem;margin-bottom: 0.15rem;}
 .science-serv-list p{font-size: 0.22rem;line-height: 0.35rem;text-indent: 2em;}
 .science-serv-list li{font-size: 0.22rem;list-style-type:decimal;margin-left: 0.3rem; line-height: 0.3rem;margin-top: 0.1rem;}
+/*服务科技-end*/
