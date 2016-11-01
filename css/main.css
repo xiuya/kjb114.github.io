@@ -7,10 +7,11 @@
 .header{top:0;left:0;width: 100%;height:0.9rem;z-index: 999999;}
 .header .classBtn{width: 0.95rem;height: 100%;font-size:0.17rem;}
 .header .classBtn i{display: block;width: 0.38rem;margin:0 auto;}
-.header .flbtn i{height: 0.32rem;background:url(../images/fl_icon.png)center center;background-size:100% 100%;margin-top:0.17rem;}
+.header .flbtn i{height: 0.32rem;background:url(../images/news_icon.png)center center;background-size:100% 100%;margin-top:0.17rem;position:relative;}
 .header .xqbtn i{height: 0.36rem;background:url(../images/fxq_icon.png)center center;background-size:100% 100%;margin-top:0.15rem;}
 .header input{width: 5.6rem;height: 0.58rem;margin-top:0.15rem;padding:0 0.1rem;font-size:0.2rem;background:#fff;}
-
+.flbtn b{position:absolute;right:0.28rem;top:0.12rem;width: 0.15rem;height: 0.15rem;border-radius:50%;background: #FB3745;display:none;}
+.flbtn .show_news_tip{display:block;}
 /*header 修改样式*/
 header.bg-color1{background-color: #00b1e4;}
 header.bg-color1 .back-button{float:left;min-width: 1.7rem;height: 100%;line-height: 0.9rem;font-size: 0.3rem;font-weight: normal;color: #fff;margin-left: 0.2rem;}

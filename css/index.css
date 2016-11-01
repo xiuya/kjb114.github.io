@@ -68,4 +68,20 @@
 .Quality_content span b{color:#FF7800;}
 .Quality_content span:last-child{color:#333;}
 /* 优质项目 end */
+
+/* 发布需求 start */
+.release_mask{top:0;bottom:0;left:0;right:0;position:absolute;background:rgba(0,0,0,.3);z-index: 999999;display:none;}
+.release_wrap{padding:0 0.15rem;text-align:left;background:#fff;border-radius:2px;position:absolute;top:0.9rem;left:0.05rem;display:none;}
+.release_top_arrow{position:absolute;top:-0.1rem;left:0.31rem;width: 0;height: 0;border-left: 0.12rem solid transparent;border-right: 0.12rem solid transparent;border-bottom:0.12rem solid #fff; 
+font-size: 0;line-height: 0;}
+.release_item{font-size:0.25rem;padding:0.15rem;border-bottom:1px solid #eee;}
+.release_wrap .mt0{margin-top:0;}
+.bt0{border-bottom:none;}
+.release_item i{display:inline-block;width: 0.3rem;height: 0.3rem;vertical-align: middle;margin-right:0.1rem;margin-top:-0.03rem;}
+.release_item1 i{background:url(../images/zb_icon1.png) center center;background-size: 100% 100%;}
+.release_item2 i{background:url(../images/fbxs1_icon.png) center center;background-size: 100% 100%;}
+.release_item3 i{height: 0.35rem;background:url(../images/cgfb1_icon.png) center center;background-size: 100% 100%;}
+.release_item4 i{background:url(../images/fbxm1_icon.png) center center;background-size: 100% 100%;}
+/* 发布需求 end */
 /* 首页 end */
+
