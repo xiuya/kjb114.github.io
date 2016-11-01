@@ -15,7 +15,7 @@
 </head>
 <body>
 	<!-- head start -->
-	<header class="header psa clear bg-color1 bg-color2">
+	<header class="header psa clear bg-color1 bg-color3">
 		<span class="back-button" onclick="history.go(-1)">
 			<i></i>
 			悬赏大厅
@@ -24,7 +24,7 @@
 	<!-- head end -->
 
 	<!-- content start -->
-	<section class="mt9 container">
+	<section class="mt9 container mbt9">
 		<!-- btn列表 start -->
 		<div class="list_box">
 		    <div class="swiper-wrapper clear">
@@ -370,10 +370,27 @@
 			</ul>
 		</div>
 		<!-- 悬赏列表 end -->
-
 	</section>
 	<!-- content end -->
 
+	<!-- foot start -->
+	<footer class="footer psa">
+		<ul class="clear">
+			<li class="foot1"><i></i><span class="c5">首页</span></li>
+			<li class="foot2"><i></i><span class="c5">招标</span></li>
+			<li class="foot3"><i></i><span class="c5">悬赏</span></li>
+			<li class="foot4"><i></i><span class="c5">我的</span></li>
+		</ul>
+	</footer>
+	<!-- foot end -->
+
 	<script type="text/javascript" src="../js/mian.js"></script>
+	<script type="text/javascript">
+		//跳转页面
+		jumpPage($(".footer ul").find("li").eq(0),"../index.html");
+		jumpPage($(".footer ul").find("li").eq(1),"Bidding-Hall-list.html");
+		jumpPage($(".footer ul").find("li").eq(2),"Reward-Hall-list.html");
+		jumpPage($(".footer ul").find("li").eq(3),"../my/my.html");
+	</script>
 </body>
 </html>

@@ -52,7 +52,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="javascript:;">
+							<a href="lists/expert-think-tank.html">
 								<i></i>
 								<span>
 									专家智库
@@ -541,6 +541,26 @@
 		</ul>
 	</footer>
 	<!-- foot end -->
+
+	<!-- 发布需求 start -->
+	<div class="release_mask">
+		<div class="release_wrap">
+			<i class="release_top_arrow"></i>
+			<p class="release_item release_item1 mt0">
+				<a href="release/issue-ender.html"><i></i>发布招标信息</a>
+			</p>
+			<p class="release_item release_item2">
+				<a href="release/post-reward.html"><i></i>发布悬赏信息</a>
+			</p>
+			<p class="release_item release_item3">
+				<a href="release/results-released.html"><i></i>发布成果信息</a>
+			</p>
+			<p class="release_item release_item4 bt0">
+				<a href="release/project-information.html"><i></i>发布项目信息</a>
+			</p>
+		</div>
+	</div>
+	<!-- 发布需求 end -->
 	<script type="text/javascript" src="js/mian.js"></script>
 	<script type="text/javascript">
 		window.onload=function(){
@@ -549,7 +569,6 @@
 				var stop = $("section").offset().top;
 				var clientH = $(window).height();
 				var scrollH = $("section")[0].scrollHeight;
-				//console.log(stop)
 
 				if(stop<=-90 && (clientH-scrollH)<=-90){
 					$('.header').css("background","#00b1e4");
@@ -558,17 +577,29 @@
 				};
 			});
 
-			// //推荐服务商
-			 var $ul1 = $('.tjfws_wrap');
-			 var $li1 = $ul1.find('li');
-			 var $ulW = $li1.length*(2.8+0.08)-0.08;
+			//推荐服务商
+			var $ul1 = $('.tjfws_wrap');
+			var $li1 = $ul1.find('li');
+			var $ulW = $li1.length*(2.8+0.08)-0.08;
 			$ul1[0].style.width = $ulW+"rem";
 
-			// //技术服务
-			 var $ul2 = $(".jsfw_wrap");
-			 var $li2 = $ul2.find("li");
-			 var $ulW1 = $li2.length*(3.8+0.08)-0.075;
-			 $ul2[0].style.width = $ulW1+"rem";
+			//技术服务
+			var $ul2 = $(".jsfw_wrap");
+			var $li2 = $ul2.find("li");
+			var $ulW1 = $li2.length*(3.8+0.08)-0.075;
+			$ul2[0].style.width = $ulW1+"rem";
+
+			//发布需求入口事件
+			$(".xqbtn").on(touchstart,function(){
+				$(".release_mask").fadeIn(200,function(){
+					$(".release_wrap").show();
+				}).on(touchstart,function(){
+					var _this = $(this);
+					$(".release_wrap").fadeOut(200,function(){
+						_this.fadeOut(200);
+					});
+				});
+			});
 		};
 
 		//跳转页面
