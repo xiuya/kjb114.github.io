@@ -44,3 +44,35 @@
 /*星级*/
 .details-ul .score-ol li,.details-ul .score-ol li e{width: 0.36rem;height: 0.35rem;}
 /*成果发布-end*/
+/*服务商店铺-start*/
+.serv-item{background-color: #fff;padding-bottom: 0.2rem;position: relative;}
+.serv-item-title{font-size: 0.28rem;border-bottom: 1px solid #ddd;height: 0.9rem;line-height: 0.9rem;}
+.serv-item-title span{width: 50%;text-align: center;display: inline-block;line-height: 0.9rem;height: 0.9rem;float:left;}
+.serv-item-title .serv-selected{border-bottom: 2px solid #00b1e3;color:#00b1e3;}
+.serv-item .serv-content{padding:0.35rem 0.25rem 0 0.25rem;min-height: 4.7rem;background-color: #fff;}
+.dis{display: none;}
+.serv-item .shops-text{font-size: 0.28rem;text-align: center;}
+ .serv-content .tender-hall{text-indent: 2em;text-align: left;line-height: 0.6rem;}
+.serv-shop-icon{display: inline-block;}
+.serv-shop-icon span{display: inline-block;width: 0.36rem;height: 0.34rem;border-radius: 2px;color:#fff;line-height: 0.34rem;text-align: center;font-size: 0.24rem;margin:0 0.03rem;padding: 0.01rem;}
+.shop-color1{background-color: #ff5f00;}
+.shop-color2{background-color: #ff9000;}
+.shop-color3{background-color: #76a85f;}
+.calendar p.science-serv{height: 0.6rem;line-height: 0.6rem;background-color: #00b1e4;background: rgba(0,177,228,0.6);font-size: 0.28rem;border-radius: 3px;margin-left: -0.35rem;padding:0 0.3rem 0 0.4rem;}
+.pages-banner div.science-serv-top{margin-top: 0.9rem;}
+.science-serv-unit{padding:0.35rem 0.25rem;margin-bottom: 0.1rem;}
+.science-serv-unit p{line-height: 0.6rem;font-size: 0.28rem;color:#333;}
+.science-serv-unit p b{color:#ff5f00;}
+/*服务商店铺-end*/
+.serv-img{margin:0 auto;margin-bottom: 0.4rem;overflow: hidden;}
+.serv-img1{width: 6.93rem;height: 2.88rem;}
+.serv-img2{width: 6.93rem;height: 4.35rem;}
+.serv-img3{width: 6.93rem;height: 5.7rem;}
+.science-title{font-size: 0.3rem;font-weight: bold;margin-bottom: 0.4rem;padding-left: 0.5rem;}
+.serv-details{margin-bottom: 0.4rem;padding-left: 0.5rem;}
+.serv-content .serv-details p{text-align: left;font-size: 0.28rem;}
+.serv-content .serv-details p b{display: inline-block;width: 2em;}
+.science-serv-list{margin-bottom: 0.4rem;}
+.science-serv-list h2{font-size: 0.28rem;margin-bottom: 0.15rem;}
+.science-serv-list p{font-size: 0.22rem;line-height: 0.35rem;text-indent: 2em;}
+.science-serv-list li{font-size: 0.22rem;list-style-type:decimal;margin-left: 0.3rem; line-height: 0.3rem;margin-top: 0.1rem;}
