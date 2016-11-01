@@ -201,7 +201,7 @@ header.bg-color3 .bankcard{
 .authentication{background-color: #fff;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;margin-top: 1.3rem;}
 .authentication li{margin:0 0.25rem;height: 0.8rem;line-height: 0.8rem;border-bottom: 1px solid #ddd;}
 .authentication li p{float: left;color:#333;font-size: 0.28rem;min-width: 1.3rem;display: inline-block;}
-.authentication li input{float:left;font-size: 0.2rem;background-color: #fff;margin-left: 0.3rem;width: 4.5rem;margin-top: 0.25rem;}
+.authentication li input{float:left;font-size: 0.2rem;background-color: #fff;margin-left: 0.3rem;width: 4.5rem;margin-top: 0.27rem;}
 .authentication li span{float:right;color:#999;font-size: 0.28rem;height: 100%;}
 .authentication li span b{display: inline-block;width: 0.18rem;height: 0.3rem;background: url(../images/my/right_icon.png) center center no-repeat;background-size: cover;margin-left: 0.2rem;float:right;margin-top: 0.25rem;}
 .authentication li.last-li{border:none;}
