@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="format-detection" content="telephone=no">
+	<title>文章详情</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/details.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/list.css">
+	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../js/rem.js"></script>
+	<script type="text/javascript" src="../js/swiper-3.3.1.jquery.min.js"></script>
+</head>
+<body>
+	<!-- head start -->
+	<header class="header psa clear bg-color1">
+		<span class="back-button">
+			<i></i>
+			文章详情
+		</span>
+	</header>
+	<!-- head end -->
+
+	<!-- content start -->
+	<section class="section-top container">
+		<div class="paper-title b5">
+			<p>【帮你上头条了】推荐你心水的产品<b>推荐问答</b></p>
+			<span>作者：<i>不靠谱贝贝</span></b>
+		</div>
+		<div class="paper-content b5">
+			<p class="paper-txt1">问答内容由你决定，推荐有将拿，就这么简单！</p>
+			<p>步骤：在问答中发现优质的问答，将问答页面地址复制，截图发送在问答中发现将问答页面地址复制，截图发送在问答中发现将问答页面地址复制，截图发送在问答中发现</p>
+			<div class="paper-img paper-img1">
+				<img src="../images/details/paper-img1.jpg" width="100%" height="100%">
+			</div>
+			<div class="paper-img paper-img2">
+				<img src="../images/details/paper-img2.jpg" width="100%" height="100%">
+			</div>
+			<div class="more-paper b5">
+				<span>更多精彩文章</span>
+				<b></b>
+			</div>
+		</div>
+		<div class="list_box article_banner">
+				<div class="swiper-wrapper">
+		        	<div class="swiper-slide clear swiper-slide-paper">
+		        		<a href="javascript:;">
+							<div class="article_img fl">
+								<img src="../images/lists/article_img2.jpg" width="100%" height="100%">
+							</div>
+							<div class="article_content fr">
+								<h4>
+									<span class="rads">PostgreSQL</span>
+									【帮你上头条了】推荐你心水的
+								</h4>
+								<p>
+									问答内容由你决定，推荐有奖拿，就这么简单！
+								</p>
+								<span class="step">
+									步骤：在问答中发现优质的问答，将问答页面地址
+								</span>
+								<div class="state clear">
+									<span class="fl">
+										<i></i><em>80人浏览</em>
+									</span>
+									<span class="fl">
+										<i></i><em>2人回答</em>
+									</span>
+									<span class="fl">
+										作者：<b>不靠谱贝贝</b>
+									</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide clear swiper-slide-paper">
+						<a href="javascript:;">
+							<div class="article_img fl">
+								<img src="../images/lists/article_img1.jpg" width="100%" height="100%">
+							</div>
+							<div class="article_content fr">
+								<h4>
+									<span class="rads">推荐问答</span>
+									【帮你上头条了】推荐你心水的
+								</h4>
+								<p>
+									问答内容由你决定，推荐有奖拿，就这么简单！
+								</p>
+								<span class="step">
+									步骤：在问答中发现优质的问答，将问答页面地址
+								</span>
+								<div class="state clear">
+									<span class="fl">
+										<i></i><em>80人浏览</em>
+									</span>
+									<span class="fl">
+										<i></i><em>2人回答</em>
+									</span>
+									<span class="fl">
+										作者：<b>不靠谱贝贝</b>
+									</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide clear swiper-slide-paper">
+						<a href="javascript:;">
+							<div class="article_img fl">
+								<img src="../images/lists/article_img1.jpg" width="100%" height="100%">
+							</div>
+							<div class="article_content fr">
+								<h4>
+									<span class="rads">推荐问答</span>
+									【帮你上头条了】推荐你心水的
+								</h4>
+								<p>
+									问答内容由你决定，推荐有奖拿，就这么简单！
+								</p>
+								<span class="step">
+									步骤：在问答中发现优质的问答，将问答页面地址
+								</span>
+								<div class="state clear">
+									<span class="fl">
+										<i></i><em>80人浏览</em>
+									</span>
+									<span class="fl">
+										<i></i><em>2人回答</em>
+									</span>
+									<span class="fl">
+										作者：<b>不靠谱贝贝</b>
+									</span>
+								</div>
+							</div>
+						</a>
+					</div>
+		        </div>
+		        <div class="pagination"></div>
+		</div>
+		<div class="paper-comment b5">
+			<h2>全部评论</h2>
+			<p class="paper-comment-txt1">还没有评论快来评论吧！</p>
+		</div>
+	</section>
+	<!-- content end -->
+</body>
+<script type="text/javascript" src="../js/mian.js"></script>
+	<script type="text/javascript">
+		var wrapWidth = $(".list_box").find(".swiper-slide").length*300;
+		$('.list_box .swiper-wrapper').width(wrapWidth+"%");
+		 var swiper = new Swiper('.article_banner',{
+		     pagination: '.pagination',
+		     paginationClickable:true,
+		     loop:true,
+		     autoplay:3000
+		 });
+	</script>
+</html>
