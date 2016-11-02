@@ -1,4 +1,4 @@
-﻿/* 
+﻿\/* 
 	共用样式表
  */
 @charset "utf-8";
@@ -44,11 +44,11 @@ header.bg-color2{background:#00171d;}
 .swiper-slide ol li{float:left;width:20%;height: 100%;text-align: center;}
 .swiper-slide ol li span{color:#666;font-size:0.22rem;}
 .swiper-slide ol li i{display: block;width: 0.92rem;height: 0.93rem;margin:0 auto;margin-top: 0.28rem;margin-bottom:0.1rem;}
-.swiper-slide ol li:nth-child(1) i{background:url(../images/kjfu_icon.png)center center;background-size:100% 100%;}
+/* .swiper-slide ol li:nth-child(1) i{background:url(../images/kjfu_icon.png)center center;background-size:100% 100%;}
 .swiper-slide ol li:nth-child(2) i{background:url(../images/jrzc_icon.png)center center;background-size:100% 100%;}
 .swiper-slide ol li:nth-child(3) i{background:url(../images/zjzk_icon.png)center center;background-size:100% 100%;}
 .swiper-slide ol li:nth-child(4) i{background:url(../images/bkxy_icon.png)center center;background-size:100% 100%;}
-.swiper-slide ol li:nth-child(5) i{background:url(../images/gdlp_icon.png)center center;background-size:100% 100%;}
+.swiper-slide ol li:nth-child(5) i{background:url(../images/gdlp_icon.png)center center;background-size:100% 100%;} */
 /* 首页+成果发布列表页 按钮列表 end */
 
 /*优质项目+金融支持+悬赏详情+成果发布-start*/
