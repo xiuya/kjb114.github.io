@@ -34,7 +34,7 @@ header.bg-color2{background:#00171d;}
 /* 首页+成果发布列表页 按钮列表 start */
 .list_box{width: 100%;background:#fff;overflow:hidden;}
 .list_box .swiper-wrapper{}
-.swiper-slide{height: 100%;float:left;}
+.swiper-slide{width: 100%;height: 100%;float:left;}
 .swiper-slide a{display:block;}
 .pagination{width: 100%;height: 0.65rem;text-align:center;line-height:0.65rem;}
 .pagination span{display:inline-block;width:0.12rem;height:0.12rem;border-radius:50%;background:#DDDDDD;margin:0 0.05rem;}

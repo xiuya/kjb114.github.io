@@ -17,7 +17,7 @@
 <body>
 	<!-- head start -->
 	<header class="header psa clear bg-color1">
-		<span class="back-button">
+		<span class="back-button"  onclick="history.go(-1)">
 			<i></i>
 			文章详情
 		</span>
@@ -25,25 +25,25 @@
 	<!-- head end -->
 
 	<!-- content start -->
-	<section class="section-top container">
+	<section class="section-top message_details a_left">
 		<div class="paper-title b5">
 			<p>【帮你上头条了】推荐你心水的产品<b>推荐问答</b></p>
-			<span>作者：<i>不靠谱贝贝</span></b>
+			<span>作者：<i>不靠谱贝贝</i></span>
 		</div>
+		<!-- 文章内容start -->
 		<div class="paper-content b5">
 			<p class="paper-txt1">问答内容由你决定，推荐有将拿，就这么简单！</p>
 			<p>步骤：在问答中发现优质的问答，将问答页面地址复制，截图发送在问答中发现将问答页面地址复制，截图发送在问答中发现将问答页面地址复制，截图发送在问答中发现</p>
-			<div class="paper-img paper-img1">
-				<img src="../images/details/paper-img1.jpg" width="100%" height="100%">
-			</div>
-			<div class="paper-img paper-img2">
-				<img src="../images/details/paper-img2.jpg" width="100%" height="100%">
-			</div>
-			<div class="more-paper b5">
-				<span>更多精彩文章</span>
-				<b></b>
-			</div>
+			<img src="../images/details/paper-img1.jpg" width="80%" height="100%">
+			<img src="../images/details/paper-img2.jpg" width="80%" height="100%">
 		</div>
+		<div class="more-paper b5">
+			<span>更多精彩文章</span>
+			<b></b>
+		</div>
+		<!-- 文章内容 end -->
+
+		<!-- 推荐文章banner start -->
 		<div class="list_box article_banner">
 				<div class="swiper-wrapper">
 		        	<div class="swiper-slide clear swiper-slide-paper">
@@ -139,6 +139,8 @@
 		        </div>
 		        <div class="pagination"></div>
 		</div>
+		<!-- 推荐文章banner end -->
+		
 		<div class="paper-comment b5">
 			<h2>全部评论</h2>
 			<p class="paper-comment-txt1">还没有评论快来评论吧！</p>
