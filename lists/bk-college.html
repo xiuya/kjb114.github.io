@@ -444,20 +444,7 @@
 	<script type="text/javascript">
 		//pc 移动端事件兼容处理
 		var isEv = /Mobile/.test(window.navigator.userAgent);
-		var touchstart = "";
-		var touchmove = "";
-		var touchend = "";
-
-		if(isEv){
-			touchstart = "touchstart";
-			touchmove = "touchmove";
-			touchend = "touchend";
-		}else{
-			touchstart = "mousedown";
-			touchmove = "mousemove";
-			touchend = "mouseup";
-		};
-
+		var touchstart = isEv?"touchstart":"click";
 
 		//专家切换
 		var $screenBtn = $(".list_screen_btn").find("span");

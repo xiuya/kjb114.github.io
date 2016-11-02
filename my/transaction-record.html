@@ -5,73 +5,57 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no"/>
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
 	<meta name="format-detection" content="telephone=no">
-	<title>我的</title>
+	<title>交易记录</title>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/my.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/list.css">
 	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="../js/rem.js"></script>
+	<script type="text/javascript" src="../js/swiper-3.3.1.jquery.min.js"></script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
 </head>
 <body>
 	<!-- head start -->
-	<header class="header psa clear bg-color1">
+	<header class="header psa clear bg-color1 bg-color3">
 		<span class="back-button" onclick="history.go(-1)">
 			<i></i>
-			 返回 
+			交易记录
 		</span>
 	</header>
 	<!-- head end -->
 
 	<!-- content start -->
-	<section class="mtop-btm container">
-		<header class="my_head_wrap clear">
-			<div class="my_head_img fl">
-				<img src="../images/my/heda_img.png" width="100%" height="100%" />
-			</div>
-			<div class="my_name fl">
-				<h4>silently2016</h4>
-				<span>156****6028</span>
-			</div>
-		</header>
-		<div class="my_balance b5">
-			<div class="my_balance_ck">
-				<b class="fl">9,000,807.68</b>
-				<i class="fl"></i>
-			</div>
-			<div class="my_balance_wrap clear">
-				<div class="my_balance_item ky_blance fl">
-					<i class="fl"></i>
-					<p class="fl">
-						<span class="my_balance_names">
-							可用余额
-						</span>
-						<span class="my_balances">
-							890,990.68
-						</span>
-					</p>
-				</div>
-				<div class="my_balance_item dj_blance fr">
-					<i class="fl"></i>
-					<p class="fl">
-						<span class="my_balance_names">
-							冻结金额
-						</span>
-						<span class="my_balances">
-							890,990.68
-						</span>
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="class_items b5 item_setting">
-			<span><i></i>账户设置</span>
-		</div>
-		<div class="class_items b5 item_jyjl">
-			<span><i></i>交易记录</span>
-			<span class="ck_all_jyjl fr">查看所有交易</span>
-		</div>
+	<section class="mt9">
 		<ul class="jy_list">
+			<li>
+				<div class="clear">
+					<span class="fl jy_name">
+						<i>○</i>数据交换前置开发系统
+					</span>
+					<i class="fr yjt_icon"></i>	
+				</div>
+				<div class="transaction_details">
+					<p>
+						创建时间：<span>2016-10-24</span>
+					</p>
+					<p>
+						交易号：<span>201610241747398898</span>
+					</p>
+					<p>
+						名称：<span>账户充值</span>
+					</p>
+					<p>
+						对方：<span>无</span>
+					</p>
+					<p>
+						金额：<span>1000.00</span>
+					</p>
+					<p>
+						状态：<span>已完成</span>
+					</p>
+				</div>
+			</li>
 			<li>
 				<div class="clear">
 					<span class="fl jy_name">
@@ -216,46 +200,8 @@
 	</section>
 	<!-- content end -->
 
-	<!-- foot start -->
-	<footer class="footer psa">
-		<ul class="clear">
-			<li class="foot1"><i></i><span class="c5">首页</span></li>
-			<li class="foot2"><i></i><span class="c5">招标</span></li>
-			<li class="foot3"><i></i><span class="c5">悬赏</span></li>
-			<li class="foot4"><i></i><span class="c5">我的</span></li>
-		</ul>
-	</footer>
-	<!-- foot end -->
-	
+	<script type="text/javascript" src="../js/mian.js"></script>
 	<script type="text/javascript">
-		//跳转页面
-		jumpPage($(".footer ul").find("li").eq(0),"../index.html");
-		jumpPage($(".footer ul").find("li").eq(1),"../lists/Bidding-Hall-list.html");
-		jumpPage($(".footer ul").find("li").eq(2),"../lists/Reward-Hall-list.html");
-		jumpPage($(".my_head_wrap"),"account-settings.html");
-		jumpPage($(".item_setting"),"account-settings.html");
-		jumpPage($(".ck_all_jyjl"),"transaction-record.html");
-
-
-		//隐藏与显示余额
-		$(".my_balance_ck i").click(function(){
-			var txt = $('.my_balance_ck b').text();
-			if(txt === "********"){
-				//发送一个请求，查账户余额，返回至此
-				$(".my_balance_ck b").text("9,000,807.68").css("marginTop","0rem");;
-				$(this).css({
-					"background":"url(../images/my/ck_icon1.png) center center no-repeat",
-					"backgroundSize":"100% 100%"
-				});
-			}else{
-				$(".my_balance_ck b").text("********").css("marginTop","0.09rem");
-				$(this).css({
-					"background":"url(../images/my/ck_icon.png) center center no-repeat",
-					"backgroundSize":"100% 100%"
-				});
-			};
-		});
-
 		//交易记录
 		var isEv = /Mobile/.test(window.navigator.userAgent);
 		var touchstart = isEv?"touchstart":"click";
@@ -285,5 +231,6 @@
 			};
 		});
 	</script>
+	
 </body>
 </html>
