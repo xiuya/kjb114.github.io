@@ -78,3 +78,25 @@
 .science-serv-list p{font-size: 0.22rem;line-height: 0.35rem;text-indent: 2em;}
 .science-serv-list li{font-size: 0.22rem;list-style-type:decimal;margin-left: 0.3rem; line-height: 0.3rem;margin-top: 0.1rem;}
 /*服务科技-end*/
+/*文章详情-start*/
+.paper-title{padding:0.3rem 0.3rem 0.1rem;}
+.paper-title p{font-size: 0.3rem;line-height: 0.5rem;margin-left: -0.17rem;}
+.paper-title p b{float: right;padding:0 0.1rem;border-radius: 2px;font-size: 0.2rem;color:#3d9cfa;border:1px solid #3d9cfa;line-height: 0.4rem;}
+.paper-title span{color:#aaa;font-size: 0.2rem;margin-left: 1em;margin-left: -0.01rem;}
+.paper-title span i{color:#01b1e3;}
+.paper-content p{font-size: 0.28rem;color:#888;line-height: 0.4rem;padding:0 0.3rem;}
+.paper-content p.paper-txt1{color:#ff6505;}
+.paper-img{margin:0 auto;margin-bottom: 0.2rem;padding:0 0.3rem;}
+.paper-img1{width: 6.92rem;height: 4.7rem;margin-top: 0.4rem;}
+.paper-img2{width: 6.92rem;height: 4.68rem;}
+.more-paper{text-align: center;line-height: 0.35rem;margin-top: 1rem;position: relative;z-index: 10;}
+.more-paper span{font-size: 0.3rem;color:#aaa;background-color: #fff;padding:0 0.1rem;display: inline-block;position: relative;z-index: 30;letter-spacing: 1px;}
+.more-paper b{display: inline-block;width: 100%;height: 1px;background-color: #ddd;position: absolute;top:50%;left:0;z-index: 20;}
+.swiper-wrapper div.swiper-slide-paper{margin-top: 0.2rem;}
+.paper-comment{min-height: 4.5rem;margin-top: 0.2rem;}
+.paper-comment h2{line-height: 0.6rem;color:#666;font-size: 0.28rem;padding-left: 0.3rem;border-bottom: 1px solid #ddd;}
+.paper-comment-txt1{padding:0.3rem;color:#999;font-size: 0.26rem;text-align: center;margin-top: 0.8rem;}
+/*文章详情-end*/
+/*专家介绍-start*/
+.expert-txt{line-height: 0.5rem;text-indent: 2em;}
+/*专家介绍-end*/
