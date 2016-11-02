@@ -137,7 +137,7 @@
 				</div>
 			</div>
 
-			<div class="list_box article_banner mt2">
+			<div class="list_box article_banner tab_banner mt2">
 				<div class="swiper-wrapper">
 		        	<div class="swiper-slide clear">
 		        		<a href="../details/paper-details.html">
@@ -440,19 +440,54 @@
 		</div>
 	</section>
 	<!-- content end -->
-
 	
-	<script type="text/javascript" src="../js/mian.js"></script>
 	<script type="text/javascript">
+		//pc 移动端事件兼容处理
+		var isEv = /Mobile/.test(window.navigator.userAgent);
+		var touchstart = "";
+		var touchmove = "";
+		var touchend = "";
+
+		if(isEv){
+			touchstart = "touchstart";
+			touchmove = "touchmove";
+			touchend = "touchend";
+		}else{
+			touchstart = "mousedown";
+			touchmove = "mousemove";
+			touchend = "mouseup";
+		};
+
+
+		//专家切换
+		var $screenBtn = $(".list_screen_btn").find("span");
+		var $termList = $(".list_screen").find("ul");
+
+		$screenBtn.on(touchstart,function(){
+			var index = $(this).index();
+
+			$(this).addClass("list_screen_on").siblings("span").removeClass("list_screen_on");
+			$(this).parent().parent().find("ul").eq(index).show().siblings("ul").hide();
+		});
+
+
 		var wrapWidth = $(".list_box").find(".swiper-slide").length*300;
 		$('.list_box .swiper-wrapper').width(wrapWidth+"%");
-		 // var swiper = new Swiper('.article_banner',{
-		 //     pagination: '.pagination',
-		 //     paginationClickable:true,
-		 //     loop:true,
-		 //     autoplay:3000
-		 // });
 
+		//专家板块 banner
+		var swipers = new Swiper('.tab_banner',{
+		     pagination: '.pagination',
+		     paginationClickable:true,
+		     loop:true,
+		     autoplay:3000
+		 });
+		//活动专栏	
+		var swiper = new Swiper('.activity',{
+		     pagination: '.pagination',
+		     paginationClickable:true,
+		     loop:true,
+		     autoplay:3000
+		 });
 	</script>
 </body>
 </html>
