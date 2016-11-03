@@ -3,14 +3,6 @@
 .container .list_box .swiper-slide ol{height:auto;width: auto;}
 .container .list_box .swiper-slide ol li{height: 1.6rem;width:25%;}
 .container .list_box .swiper-slide ol li i{width: 0.91rem;height: 0.91rem;border-radius:50%;}
-/* .container .list_box .swiper-slide ol li:nth-child(1) i{background:url(../images/lists/list_btn1.png)center center;background-size:100% 100%;}
-.container .list_box .swiper-slide ol li:nth-child(2) i{background:url(../images/lists/list_btn2.png)center center;background-size:100% 100%;}
-.container .list_box .swiper-slide ol li:nth-child(3) i{background:url(../images/lists/list_btn3.png)center center;background-size:100% 100%;}
-.container .list_box .swiper-slide ol li:nth-child(4) i{background:url(../images/lists/list_btn4.png)center center;background-size:100% 100%;}
-.container .list_box .swiper-slide ol:last-child li:nth-child(1) i{background:url(../images/lists/list_btn5.png)center center;background-size:100% 100%;}
-.container .list_box .swiper-slide ol:last-child li:nth-child(2) i{background:url(../images/lists/list_btn6.png)center center;background-size:100% 100%;}
-.container .list_box .swiper-slide ol:last-child li:nth-child(3) i{background:url(../images/lists/list_btn7.png)center center;background-size:100% 100%;}
-.container .list_box .swiper-slide ol:last-child li:nth-child(4) i{background:url(../images/lists/list_btn8.png)center center;background-size:100% 100%;} */
 .container .list_box .pagination .swiper-pagination-bullet-active{background:#FF6000;}
 
 .list_screen,.list_screen_term,.result_list{width: 100%;}

@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no"/>
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
 	<meta name="format-detection" content="telephone=no">
-	<title>账户设置</title>
+	<title>服务商中心</title>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/my.css"/>
@@ -19,7 +19,7 @@
 	<header class="header psa clear bg-color1 bg-color3">
 		<span class="back-button" onclick="history.go(-1)">
 			<i></i>
-			账户设置
+			服务商中心
 		</span>
 	</header>
 	<!-- head end -->
@@ -36,55 +36,31 @@
 			<li class="setting_item">
 				资料完善
 			</li>
-			<li class="setting_item">
-				密码设置
-			</li>
-			<li class="setting_item clear">
-				手机号
-				<span class="settings_item_num fr">
-					186****6028
-				</span>
-			</li>
-			<li class="setting_item">
-				账户认证
-			</li>
 		</ul>
 
 		<ul class="account-settings brt">
 			<li class="setting_item">
-				收支明细
+				我的订单
 			</li>
 			<li class="setting_item">
-				账户充值
-			</li>
-			<li class="setting_item">
-				余额提现
-			</li>
-		</ul>
-
-		<ul class="account-settings brt">
-			<li class="setting_item">
-				发布成果
-			</li>
-			<li class="setting_item">
-				成果列表
-			</li>
-			<li class="setting_item">
-				成果预定
-			</li>
-		</ul>
-
-		<ul class="account-settings brt">
-			<li class="setting_item">
-				全部关注
-			</li>
-			<li class="setting_item">
-				我的粉丝
+				订单管理
 			</li>
 		</ul>
 		
-		<input class="setting_btn" type="button" name="" value="退出登录" />
-			
+		<ul class="account-settings brt">
+			<li class="setting_item">
+				发布服务
+			</li>
+			<li class="setting_item">
+				已发布服务
+			</li>
+		</ul>
+
+		<ul class="account-settings brt">
+			<li class="setting_item">
+				我的店铺
+			</li>
+		</ul>
 	</section>
 	<!-- content end -->
 
@@ -105,19 +81,8 @@
 		jumpPage($(".settings_item_num"),"cell_phone_num.html");
 		jumpPage($(".account-settings").eq(0).find("li").eq(1),"information-perfect.html");
 		jumpPage($(".account-settings").eq(0).find("li").eq(4),"account-authentication.html");
-		
 
-		jumpPage($(".account-settings").eq(1).find("li").eq(0),"balance-payments.html");
-		jumpPage($(".account-settings").eq(1).find("li").eq(1),"account-recharge.html");
-		jumpPage($(".account-settings").eq(1).find("li").eq(2),"balance_withdrawal.html");
-
-		jumpPage($(".account-settings").eq(2).find("li").eq(0),"../release/results-released.html");
-		jumpPage($(".account-settings").eq(2).find("li").eq(1),"result-list.html");
-		jumpPage($(".account-settings").eq(2).find("li").eq(2),"result-reservation.html");
-
-		jumpPage($(".account-settings").eq(3).find("li").eq(0),"all-attention.html");
-		jumpPage($(".account-settings").eq(3).find("li").eq(1),"all-fan.html");
+		jumpPage($(".account-settings").eq(1).find("li").eq(0),"my-order.html");
 	</script>
-	
 </body>
 </html>

@@ -277,13 +277,13 @@ header.bg-color3 .bankcard{
 	background:url(../images/my/right_icon.png) center right 0.2rem no-repeat,#fff;
 	background-size: 0.18rem 0.3rem;
 }
-.class_items span{
-}
+
 .class_items i{
 	display:inline-block;
 	margin-right:0.1rem;
 	vertical-align: middle;
-	margin-top:-0.03rem;
+	margin-top:-0.03rem;width: 0.39rem;
+    height: 0.37rem;
 }
 .item_setting i{
 	width: 0.39rem;height: 0.37rem;background:url(../images/my/setting_icon.png) center center no-repeat;
@@ -297,10 +297,16 @@ header.bg-color3 .bankcard{
 .jy_list{
 	list-style-type: disc;
 }
-.jy_list li{
+.jy_money{
+	margin-right:0.2rem;
+}
+.jy_list li,.jy_list_title{
 	color:#999;font-size:0.28rem;background:#fff;
 	border-bottom:1px solid #ddd;height:0.8rem;overflow: hidden;
 	line-height:0.8rem;box-sizing: border-box;
+}
+.jy_list_title{
+	text-indent: 0.2rem;color:#666;display:block;
 }
 .transaction_details{border-top:1px solid #ddd;}
 .transaction_details p{
@@ -318,6 +324,31 @@ transition: transform .3s;
 .jy_list li span i{
 	font-weight:400;font-size:0.2rem;padding-right:0.2rem;
 }
+
+.service_provider-center,.cmployer_center,.financing_management{margin-top:0;border-top:none;}
+.service_provider-center span i{background:url(../images/my/fws_icon.png);background-size: 100% 100%;}
+.cmployer_center span i{background:url(../images/my/gzzx_icon.png);background-size: 100% 100%;}
+.financing_management span i{background:url(../images/my/trzgl_icon.png);background-size: 100% 100%;}
 /* 我的 end */
 
-/* 交易记录 srtart */
+/* 成果列表+成果预定+我的订单 srtart */
+.result_list_title,.result_operation,.order_tab{height: 0.8rem;line-height:0.8rem;}
+.result_list_title{text-indent:0.2rem;color:#666;}
+.result_name,.result_num{height: 0.6rem;width: 100%;line-height:0.6rem;color:#777;}
+.result_name{font-size:0.25rem;padding:0 0.2rem;}
+.result_name_txt{width: 75%;height:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.result_name_money{width: 25%;text-align:right;}
+.result_num{border-bottom:1px solid #ddd;color:#999;text-align:right;padding-right:0.2rem;font-size:0.25rem;}
+.result_num span{font-size:0.3rem;}
+.result_operation span{font-size:0.25rem;color:#999;padding-left:0.2rem;}
+.result_operation div{margin-right:0.2rem;}
+.result_btn{display:inline-block;padding:0 0.2rem;height: 0.4rem;line-height:0.4rem;font-size:0.25rem;border:1px solid #ff6100;color:#ff6100;border-radius:3px;margin-top:0.2rem;}
+.mrt2{margin-right:0.2rem;}
+.result_list_item,.order_tab{margin-bottom:0.2rem;}
+
+.order_tab{border-bottom:1px solid #ddd;}
+.order_tab_item{width: 25%;height: 100%;font-size:0.25rem;text-align:center;}
+.active_on,.tbz{color:#ff6100;}
+.tbz{text-align:left;padding-left:0.2rem;}
+.qx_order{border:1px solid #ddd;color:#a7a7a7;}
+/* 成果列表+成果预定+我的订单 end */

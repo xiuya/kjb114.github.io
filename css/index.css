@@ -8,7 +8,6 @@
 
 /* 成果发布 start */
 .Results_release{width: 100%;padding-bottom: 0.3rem;}
-
 .Results_release ul{padding:0 0.05rem;transition:all .1s;}
 .Results_release ul li{width: 32.02%;margin-right:0.14rem;float:left;border:1px solid #ddd;}
 .Results_release ul li:last-child{margin:0;}

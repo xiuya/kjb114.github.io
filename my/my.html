@@ -67,6 +67,16 @@
 		<div class="class_items b5 item_setting">
 			<span><i></i>账户设置</span>
 		</div>
+		<div class="class_items b5 service_provider-center">
+			<span><i></i>服务商中心</span>
+		</div>
+		<div class="class_items b5 cmployer_center">
+			<span><i></i>雇主中心</span>
+		</div>
+		<div class="class_items b5 financing_management">
+			<span><i></i>投融资管理</span>
+		</div>
+
 		<div class="class_items b5 item_jyjl">
 			<span><i></i>交易记录</span>
 			<span class="ck_all_jyjl fr">查看所有交易</span>
@@ -78,6 +88,36 @@
 						<i>○</i>数据交换前置开发系统
 					</span>
 					<i class="fr yjt_icon"></i>	
+					<span class="fr jy_money">+1000.00</span>
+				</div>
+				<div class="transaction_details">
+					<p>
+						创建时间：<span>2016-10-24</span>
+					</p>
+					<p>
+						交易号：<span>201610241747398898</span>
+					</p>
+					<p>
+						名称：<span>账户充值</span>
+					</p>
+					<p>
+						对方：<span>无</span>
+					</p>
+					<p>
+						金额：<span>1000.00</span>
+					</p>
+					<p>
+						状态：<span>已完成</span>
+					</p>
+				</div>
+			</li>
+			<li>
+				<div class="clear">
+					<span class="fl jy_name">
+						<i>○</i>数据交换前置开发系统
+					</span>
+					<i class="fr yjt_icon"></i>
+					<span class="fr jy_money">+1000.00</span>
 				</div>
 				<div class="transaction_details">
 					<p>
@@ -106,6 +146,7 @@
 						<i>○</i>数据交换前置开发系统
 					</span>
 					<i class="fr yjt_icon"></i>	
+					<span class="fr jy_money">+1000.00</span>
 				</div>
 				<div class="transaction_details">
 					<p>
@@ -134,6 +175,7 @@
 						<i>○</i>数据交换前置开发系统
 					</span>
 					<i class="fr yjt_icon"></i>	
+					<span class="fr jy_money">+1000.00</span>
 				</div>
 				<div class="transaction_details">
 					<p>
@@ -162,34 +204,7 @@
 						<i>○</i>数据交换前置开发系统
 					</span>
 					<i class="fr yjt_icon"></i>	
-				</div>
-				<div class="transaction_details">
-					<p>
-						创建时间：<span>2016-10-24</span>
-					</p>
-					<p>
-						交易号：<span>201610241747398898</span>
-					</p>
-					<p>
-						名称：<span>账户充值</span>
-					</p>
-					<p>
-						对方：<span>无</span>
-					</p>
-					<p>
-						金额：<span>1000.00</span>
-					</p>
-					<p>
-						状态：<span>已完成</span>
-					</p>
-				</div>
-			</li>
-			<li>
-				<div class="clear">
-					<span class="fl jy_name">
-						<i>○</i>数据交换前置开发系统
-					</span>
-					<i class="fr yjt_icon"></i>	
+					<span class="fr jy_money">+1000.00</span>
 				</div>
 				<div class="transaction_details">
 					<p>
@@ -236,6 +251,12 @@
 		jumpPage($(".item_setting"),"account-settings.html");
 		jumpPage($(".ck_all_jyjl"),"transaction-record.html");
 
+		//服务商中心
+		jumpPage($(".service_provider-center"),"service-provider-center.html");
+		//雇主中心
+		jumpPage($(".cmployer_center"),"employer-center.html");
+		//投融资管理
+		jumpPage($(".financing_management"),"financing-management.html");
 
 		//隐藏与显示余额
 		$(".my_balance_ck i").click(function(){
