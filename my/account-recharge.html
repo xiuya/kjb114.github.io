@@ -89,6 +89,79 @@
 					<span>（尾号5850）</span>
 				</div>
 			</li>
+			<li class="set_password_item balance_payments_item remove_active clear">
+				<div class="balance_payments_img bank_card_img fl">
+					<img src="../images/my/gsyh_img.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg fl">
+					<p>中国工商银行储蓄卡</p>
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item remove_active clear">
+				<div class="balance_payments_img bank_card_img fl">
+					<img src="../images/my/gsyh_img.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg fl">
+					<p>中国工商银行储蓄卡</p>
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item remove_active clear">
+				<div class="balance_payments_img bank_card_img fl">
+					<img src="../images/my/gsyh_img.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg fl">
+					<p>中国工商银行储蓄卡</p>
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item remove_active clear">
+				<div class="balance_payments_img bank_card_img fl">
+					<img src="../images/my/gsyh_img.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg fl">
+					<p>中国工商银行储蓄卡</p>
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item remove_active clear">
+				<div class="balance_payments_img bank_card_img fl">
+					<img src="../images/my/gsyh_img.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg fl">
+					<p>中国工商银行储蓄卡</p>
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item remove_active clear">
+				<div class="balance_payments_img bank_card_img fl">
+					<img src="../images/my/gsyh_img.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg fl">
+					<p>中国工商银行储蓄卡</p>
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item remove_active clear">
+				<div class="balance_payments_img bank_card_img fl">
+					<img src="../images/my/gsyh_img.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg fl">
+					<p>中国工商银行储蓄卡</p>
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+			<li class="set_password_item balance_payments_item remove_active clear">
+				<div class="balance_payments_img bank_card_img fl">
+					<img src="../images/my/gsyh_img.png" width="100%" height="100%">
+				</div>
+				<div class="balances bank_card_msg fl">
+					<p>中国工商银行储蓄卡</p>
+					<span>（尾号5850）</span>
+				</div>
+			</li>
+
 			<li class="setting_item">
 				使用新卡付款
 			</li>
@@ -99,7 +172,8 @@
 	<script type="text/javascript">
 		var isEv = /Mobile/.test(window.navigator.userAgent);
 		var touchstart = "";
-		var touchstart = isEv?"touchstart":"click";
+		var touchstart = isEv?"touchstart":"mousedown";
+		var touchend = isEv?"touchend":"mouseup";
 
 		//当提现金额大于或等于1元，激活提现按钮
 		$(".set_password_input").keyup(function() {
@@ -140,24 +214,34 @@
 				$(".setHead_mask").fadeOut(300);
 			},300);
 		};
-
+	
 		//选择银行卡切回页面更新信息
 		var bank_src = "";
 		var bank_name = "";
 		var bank_des = "";
-		$(".remove_active").on(touchstart,function(){
-			var index = $(this).index();
-			$(this).addClass("select_active").siblings(".remove_active").removeClass("select_active");
-			bank_src = $(this).find("img").attr("src");
-			bank_name = $(this).find("p").text();
-			bank_des = $(this).find("span").text();
-			close_select();
 
-			$(".select_bank img").attr("src",bank_src);
-			$(".select_bank p").text(bank_name);
-			$(".select_bank span").text(bank_des);
-		});
+		$(".remove_active").on(touchstart,function(ev){
+			var Y = ev.clientY||window.event.clientY||ev.originalEvent.changedTouches[0].clientY;
+
+			$(this).on(touchend,function(ev){
+				var evY = ev.clientY||window.event.clientY||ev.originalEvent.changedTouches[0].clientY;
+				if(Y == evY){
+					var index = $(this).index();
+					$(this).addClass("select_active").siblings(".remove_active").removeClass("select_active");
+					bank_src = $(this).find("img").attr("src");
+					bank_name = $(this).find("p").text();
+					bank_des = $(this).find("span").text();
+					close_select();
 		
+					$(".select_bank img").attr("src",bank_src);
+					$(".select_bank p").text(bank_name);
+					$(".select_bank span").text(bank_des);
+				}else{
+					return;
+				};
+			});
+		});
+
 		//点击使用新卡跳转，绑定银行卡
 		jumpPage($(".setting_item"),"add-bank-card1.html");
 	</script>
